@@ -1,6 +1,6 @@
 {
   "name": "@zthun/helpful-node",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "description": "Helpful extended methods to node that aren't found in the base api.",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@zthun/helpful-fn": "^7.2.0",
+    "@zthun/helpful-fn": "^7.2.1",
     "glob": "^11.0.2"
   },
   "devDependencies": {
