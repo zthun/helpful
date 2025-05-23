@@ -28,17 +28,17 @@
     "@zthun/helpful-fn": "^7.2.0",
     "@zthun/helpful-query": "^7.2.0",
     "lodash-es": "^4.17.21",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@zthun/cirque": "^7.1.1",
-    "@zthun/cirque-du-react": "^7.1.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "typescript": "~5.7.2",
-    "vite": "^5.4.11",
-    "vitest": "^2.1.8",
-    "vitest-mock-extended": "^2.0.2"
+    "@zthun/cirque": "^7.1.2",
+    "@zthun/cirque-du-react": "^7.1.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4",
+    "vitest-mock-extended": "^3.1.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0 <20.0.0",

@@ -28,8 +28,8 @@
     "@zthun/helpful-fn": "^7.2.0"
   },
   "devDependencies": {
-    "vite": "^5.4.11",
-    "vitest": "^2.1.8"
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4"
   },
   "files": [
     "dist"
