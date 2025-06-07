@@ -6,5 +6,6 @@ export default defineConfig({
       all: false,
       provider: "istanbul",
     },
+    projects: ["packages/*/vitest.config.ts"],
   },
 });
