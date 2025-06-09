@@ -28,6 +28,7 @@
     "@zthun/helpful-fn": "^7.2.1"
   },
   "devDependencies": {
+    "@zthun/janitor-build-config": "^19.1.5",
     "vite": "^6.3.5",
     "vitest": "^3.2.3"
   },

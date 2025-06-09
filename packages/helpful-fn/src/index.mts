@@ -15,7 +15,7 @@ export * from "./join-defined/join-defined.mjs";
 export * from "./lazy/lazy.mjs";
 export * from "./obligation/obligation.mjs";
 export * from "./orientation/orientation.mjs";
-export * from "./partial/deep-partial";
+export * from "./partial/deep-partial.mjs";
 export * from "./peel/peel.mjs";
 export * from "./pick/pick.mjs";
 export * from "./purge/purge.mjs";

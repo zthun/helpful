@@ -4,13 +4,13 @@
     "baseUrl": "packages",
     "target": "esnext",
     "paths": {
-      "@zthun/helpful-brands": ["helpful-brands/src/index"],
-      "@zthun/helpful-fn": ["helpful-fn/src/index"],
-      "@zthun/helpful-internet": ["helpful-internet/src/index"],
-      "@zthun/helpful-node": ["helpful-node/src/index"],
-      "@zthun/helpful-query": ["helpful-query/src/index"],
-      "@zthun/helpful-react": ["helpful-react/src/index"],
-      "@zthun/helpful-validation": ["helpful-validation/src/index"]
+      "@zthun/helpful-brands": ["helpful-brands/src/index.mts"],
+      "@zthun/helpful-fn": ["helpful-fn/src/index.mts"],
+      "@zthun/helpful-internet": ["helpful-internet/src/index.mts"],
+      "@zthun/helpful-node": ["helpful-node/src/index.mts"],
+      "@zthun/helpful-query": ["helpful-query/src/index.mts"],
+      "@zthun/helpful-react": ["helpful-react/src/index.mts"],
+      "@zthun/helpful-validation": ["helpful-validation/src/index.mts"]
     }
   },
   "include": ["**/*.ts", "**/*.mts"]

@@ -13,6 +13,7 @@
     "strictBindCallApply": true,
     "skipLibCheck": true,
     "target": "es5",
+    "jsx": "react-jsx",
     "module": "NodeNext"
   }
 }

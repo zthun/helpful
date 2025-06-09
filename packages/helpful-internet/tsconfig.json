@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@zthun/helpful-fn": ["../helpful-fn/src/index"]
+      "@zthun/helpful-fn": ["../helpful-fn/src/index.mts"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.mts"]

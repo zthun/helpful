@@ -1,15 +1,15 @@
-import { IZCircusSetup } from "@zthun/cirque";
-import { IZCircusReactHook, ZCircusSetupHook } from "@zthun/cirque-du-react";
+import type { IZCircusSetup } from "@zthun/cirque";
+import type { IZCircusReactHook } from "@zthun/cirque-du-react";
+import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { sleep } from "@zthun/helpful-fn";
+import type { IZDataRequest, IZDataSource } from "@zthun/helpful-query";
 import {
-  IZDataRequest,
-  IZDataSource,
   ZDataRequestBuilder,
   ZDataSourceStatic,
   ZDataSourceStaticOptionsBuilder,
 } from "@zthun/helpful-query";
 import { range } from "lodash-es";
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { mock } from "vitest-mock-extended";
 import {
