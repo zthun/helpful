@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rimraf --glob 'dist' 'reports' 'coverage' '*.tgz' '*.log' 'packages/**/dist' 'packages/**/docs' 'packages/**/*.tgz' 'packages/**/*.log' 'packages/**/.certificates'",
     "test": "vitest --run --coverage",
-    "lint": "lint-janitor",
+    "lint": "janitor-lint",
     "check": "tsc --noEmit",
     "build": "lerna run build",
     "make": "yarn clean && yarn lint && yarn check && yarn test && yarn build",
@@ -29,9 +29,10 @@
     "@types/react": "^19.1.6",
     "@types/supertest": "^6.0.3",
     "@types/uuid": "^10.0.0",
-    "@vitest/coverage-istanbul": "^3.2.2",
-    "@zthun/lint-janitor": "^18.1.0",
-    "@zthun/lint-janitor-config": "^18.1.0",
+    "@vitest/coverage-istanbul": "^3.2.3",
+    "@zthun/janitor-build-config": "^19.1.5",
+    "@zthun/janitor-lint": "^19.1.5",
+    "@zthun/janitor-lint-config": "^19.1.5",
     "happy-dom": "^17.6.3",
     "husky": "^9.1.7",
     "lerna": "^8.2.2",
@@ -42,10 +43,11 @@
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-external": "^6.2.2",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.2"
+    "vitest": "^3.2.3"
   },
   "resolutions": {
-    "rollup": "npm:@rollup/wasm-node@*"
+    "rollup": "npm:@rollup/wasm-node@*",
+    "vite": "^6.0.0"
   },
   "packageManager": "yarn@4.6.0"
 }
