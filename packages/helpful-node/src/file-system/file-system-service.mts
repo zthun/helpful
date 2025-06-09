@@ -1,8 +1,6 @@
 import { glob } from "glob";
-import {
-  IZFileSystemNode,
-  ZFileSystemNodeBuilder,
-} from "./file-system-node.mjs";
+import type { IZFileSystemNode } from "./file-system-node.mjs";
+import { ZFileSystemNodeBuilder } from "./file-system-node.mjs";
 
 /**
  * Represents options for searches.

@@ -7,7 +7,7 @@ import {
 import { ZFilterLogicBuilder, ZOperatorLogic } from "./filter-logic.mjs";
 import { ZFilterSerialize } from "./filter-serialize.mjs";
 import { ZFilterUnaryBuilder, ZOperatorUnary } from "./filter-unary.mjs";
-import { IZFilter } from "./filter.mjs";
+import type { IZFilter } from "./filter.mjs";
 
 describe("ZFilterSerialize", () => {
   const createTestTarget = () => new ZFilterSerialize();

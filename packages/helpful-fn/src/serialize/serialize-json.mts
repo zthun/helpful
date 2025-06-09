@@ -1,4 +1,4 @@
-import { IZSerialize } from "./serialize.mjs";
+import type { IZSerialize } from "./serialize.mjs";
 
 /**
  * Represents a serializer that serializes anything to a JSON string.

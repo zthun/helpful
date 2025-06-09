@@ -1,5 +1,6 @@
-import { IZCircusSetup } from "@zthun/cirque";
-import { IZCircusReactHook, ZCircusSetupHook } from "@zthun/cirque-du-react";
+import type { IZCircusSetup } from "@zthun/cirque";
+import type { IZCircusReactHook } from "@zthun/cirque-du-react";
+import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { useStateAsArray } from "./use-state-as-array.mjs";
 

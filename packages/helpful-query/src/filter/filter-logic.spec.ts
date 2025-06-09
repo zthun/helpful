@@ -3,7 +3,7 @@ import { ZFilterBinaryBuilder } from "./filter-binary.mjs";
 import { ZFilterCollectionBuilder } from "./filter-collection.mjs";
 import { ZFilterLogicBuilder, ZOperatorLogic } from "./filter-logic.mjs";
 import { ZFilterUnaryBuilder } from "./filter-unary.mjs";
-import { IZFilter } from "./filter.mjs";
+import type { IZFilter } from "./filter.mjs";
 
 describe("Logic Filter", () => {
   let clauseA: IZFilter;

@@ -1,23 +1,23 @@
 import { describe, expect, it } from "vitest";
+import type { IZFilterBinary } from "./filter-binary.mjs";
 import {
-  IZFilterBinary,
   ZFilterBinaryBuilder,
   ZOperatorBinary,
   isBinaryFilter,
 } from "./filter-binary.mjs";
+import type { IZFilterCollection } from "./filter-collection.mjs";
 import {
-  IZFilterCollection,
   ZOperatorCollection,
   isCollectionFilter,
 } from "./filter-collection.mjs";
 import { ZFilterDeserialize } from "./filter-deserialize.mjs";
+import type { IZFilterLogic } from "./filter-logic.mjs";
 import {
-  IZFilterLogic,
   ZFilterLogicBuilder,
   ZOperatorLogic,
   isLogicFilter,
 } from "./filter-logic.mjs";
-import { IZFilterMetadata, IZFilterSubject } from "./filter-subject.mjs";
+import type { IZFilterMetadata, IZFilterSubject } from "./filter-subject.mjs";
 import {
   ZFilterUnaryBuilder,
   ZOperatorUnary,

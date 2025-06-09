@@ -1,18 +1,15 @@
 import { get } from "lodash-es";
-import { IZDataMatch } from "../match/data-match.mjs";
+import type { IZDataMatch } from "../match/data-match.mjs";
 import { ZBinaryComparators } from "./filter-binary.mjs";
 import {
   ZCollectionComparators,
   isCollectionFilter,
 } from "./filter-collection.mjs";
-import {
-  IZFilterLogic,
-  ZOperatorLogic,
-  isLogicFilter,
-} from "./filter-logic.mjs";
-import { IZFilterSubject } from "./filter-subject.mjs";
+import type { IZFilterLogic } from "./filter-logic.mjs";
+import { ZOperatorLogic, isLogicFilter } from "./filter-logic.mjs";
+import type { IZFilterSubject } from "./filter-subject.mjs";
 import { ZUnaryComparators, isUnaryFilter } from "./filter-unary.mjs";
-import { IZFilter } from "./filter.mjs";
+import type { IZFilter } from "./filter.mjs";
 
 /**
  * Represents a data match object that applies a filter.

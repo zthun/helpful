@@ -1,23 +1,14 @@
-import {
-  IZFilterBinary,
-  ZOperatorBinary,
-  ZOperatorsBinary,
-} from "./filter-binary.mjs";
-import {
+import type { IZFilterBinary, ZOperatorBinary } from "./filter-binary.mjs";
+import { ZOperatorsBinary } from "./filter-binary.mjs";
+import type {
   IZFilterCollection,
   ZOperatorCollection,
-  ZOperatorsCollection,
 } from "./filter-collection.mjs";
-import {
-  IZFilterLogic,
-  ZOperatorLogic,
-  ZOperatorsLogic,
-} from "./filter-logic.mjs";
-import {
-  IZFilterUnary,
-  ZOperatorUnary,
-  ZOperatorsUnary,
-} from "./filter-unary.mjs";
+import { ZOperatorsCollection } from "./filter-collection.mjs";
+import type { IZFilterLogic, ZOperatorLogic } from "./filter-logic.mjs";
+import { ZOperatorsLogic } from "./filter-logic.mjs";
+import type { IZFilterUnary, ZOperatorUnary } from "./filter-unary.mjs";
+import { ZOperatorsUnary } from "./filter-unary.mjs";
 
 /**
  * Represents one of the filter types.

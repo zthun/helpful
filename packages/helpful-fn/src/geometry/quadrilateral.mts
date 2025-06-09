@@ -1,6 +1,6 @@
 import { isEmptyObject } from "../empty/is-empty-object.mjs";
 import { firstDefined } from "../first-where/first-where.mjs";
-import { IZPoint2d } from "./point.mjs";
+import type { IZPoint2d } from "./point.mjs";
 
 /**
  * Represents a object of 4 side values.

@@ -1,4 +1,4 @@
-import { IZDataMatch } from "./data-match.mjs";
+import type { IZDataMatch } from "./data-match.mjs";
 
 /**
  * Represents a data match that forwards to an inner match if the filter is null or undefined.

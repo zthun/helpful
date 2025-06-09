@@ -1,9 +1,6 @@
 import { describe, expect, it } from "vitest";
-import {
-  IZQuadrilateral,
-  ZQuadrilateralBuilder,
-  ZQuadrilateralLike,
-} from "./quadrilateral.mjs";
+import type { IZQuadrilateral, ZQuadrilateralLike } from "./quadrilateral.mjs";
+import { ZQuadrilateralBuilder } from "./quadrilateral.mjs";
 
 describe("Setting all sides to the same value", () => {
   it("all sides should be n", () => {

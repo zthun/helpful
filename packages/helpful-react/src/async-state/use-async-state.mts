@@ -1,6 +1,8 @@
 import { createError } from "@zthun/helpful-fn";
-import { DependencyList, useEffect, useRef, useState } from "react";
-import { Subscription, defer, from } from "rxjs";
+import type { DependencyList } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { Subscription } from "rxjs";
+import { defer, from } from "rxjs";
 
 /**
  * The value that will be set on an ZAsyncDataState when the data is being loaded.

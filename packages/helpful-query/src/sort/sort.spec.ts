@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { IZSort, ZSortBuilder, ZSortDirection } from "./sort.mjs";
+import type { IZSort } from "./sort.mjs";
+import { ZSortBuilder, ZSortDirection } from "./sort.mjs";
 
 describe("Sort Builder", () => {
   function createTestTarget() {

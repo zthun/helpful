@@ -1,4 +1,4 @@
-import { IZEmailContact } from "./email-contact.mjs";
+import type { IZEmailContact } from "./email-contact.mjs";
 
 /**
  * Represents a builder that will build a comma separated

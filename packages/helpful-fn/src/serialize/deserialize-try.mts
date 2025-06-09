@@ -1,4 +1,4 @@
-import { IZDeserialize } from "./deserialize.mjs";
+import type { IZDeserialize } from "./deserialize.mjs";
 
 /**
  * A deserializer that attempts to deserialize multiple times through a series of supported languages.

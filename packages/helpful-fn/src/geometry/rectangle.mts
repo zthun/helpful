@@ -1,10 +1,8 @@
-import {
-  ZAnchor,
-  ZHorizontalAnchor,
-  ZVerticalAnchor,
-} from "../anchor/anchor.mjs";
-import { IZPoint2d } from "./point.mjs";
-import { IZQuadrilateral, ZQuadrilateralBuilder } from "./quadrilateral.mjs";
+import type { ZAnchor } from "../anchor/anchor.mjs";
+import { ZHorizontalAnchor, ZVerticalAnchor } from "../anchor/anchor.mjs";
+import type { IZPoint2d } from "./point.mjs";
+import type { IZQuadrilateral } from "./quadrilateral.mjs";
+import { ZQuadrilateralBuilder } from "./quadrilateral.mjs";
 
 /**
  * Represents a helper object that can run calculations on a numeric quadrilateral.

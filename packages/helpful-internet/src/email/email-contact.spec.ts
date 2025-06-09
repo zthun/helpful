@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
-import { IZEmailContact, ZEmailContactBuilder } from "./email-contact.mjs";
+import type { IZEmailContact } from "./email-contact.mjs";
+import { ZEmailContactBuilder } from "./email-contact.mjs";
 
 describe("ZEmailContactBuilder.", () => {
   function createTestTarget() {

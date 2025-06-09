@@ -1,15 +1,11 @@
 import { createError } from "@zthun/helpful-fn";
-import {
-  IZDataRequest,
-  IZDataSource,
-  ZDataRequestBuilder,
-} from "@zthun/helpful-query";
+import type { IZDataRequest, IZDataSource } from "@zthun/helpful-query";
+import { ZDataRequestBuilder } from "@zthun/helpful-query";
 import { useEffect, useRef, useState } from "react";
-import { Subscription, defer } from "rxjs";
-import {
-  ZAsyncDataState,
-  ZAsyncLoading,
-} from "../async-state/use-async-state.mjs";
+import type { Subscription } from "rxjs";
+import { defer } from "rxjs";
+import type { ZAsyncDataState } from "../async-state/use-async-state.mjs";
+import { ZAsyncLoading } from "../async-state/use-async-state.mjs";
 
 /**
  * A type of view that loads the next set of data in batches.

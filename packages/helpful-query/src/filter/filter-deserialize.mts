@@ -1,30 +1,22 @@
-import { IZDeserialize, peel, peelBetween } from "@zthun/helpful-fn";
+import type { IZDeserialize } from "@zthun/helpful-fn";
+import { peel, peelBetween } from "@zthun/helpful-fn";
 import { trim, trimStart } from "lodash-es";
-import {
-  IZFilterBinary,
-  ZFilterBinaryBuilder,
-  ZOperatorBinary,
-  isBinaryOperator,
-} from "./filter-binary.mjs";
-import {
+import type { IZFilterBinary, ZOperatorBinary } from "./filter-binary.mjs";
+import { ZFilterBinaryBuilder, isBinaryOperator } from "./filter-binary.mjs";
+import type {
   IZFilterCollection,
-  ZFilterCollectionBuilder,
   ZOperatorCollection,
-  isCollectionOperator,
 } from "./filter-collection.mjs";
 import {
-  IZFilterLogic,
-  ZFilterLogicBuilder,
-  ZOperatorLogic,
-  isLogicOperator,
-} from "./filter-logic.mjs";
-import {
-  IZFilterUnary,
-  ZFilterUnaryBuilder,
-  ZOperatorUnary,
-  isUnaryOperator,
-} from "./filter-unary.mjs";
-import { IZFilter, ZOperatorFilter, ZOperatorsFilter } from "./filter.mjs";
+  ZFilterCollectionBuilder,
+  isCollectionOperator,
+} from "./filter-collection.mjs";
+import type { IZFilterLogic, ZOperatorLogic } from "./filter-logic.mjs";
+import { ZFilterLogicBuilder, isLogicOperator } from "./filter-logic.mjs";
+import type { IZFilterUnary, ZOperatorUnary } from "./filter-unary.mjs";
+import { ZFilterUnaryBuilder, isUnaryOperator } from "./filter-unary.mjs";
+import type { IZFilter, ZOperatorFilter } from "./filter.mjs";
+import { ZOperatorsFilter } from "./filter.mjs";
 
 /**
  * Represents a parser object that can parse an {@link IZFilter} from a string.

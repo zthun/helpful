@@ -1,6 +1,8 @@
-import { IZDeserialize, peel, peelBetween } from "@zthun/helpful-fn";
+import type { IZDeserialize } from "@zthun/helpful-fn";
+import { peel, peelBetween } from "@zthun/helpful-fn";
 import { trim, trimStart } from "lodash-es";
-import { IZSort, ZSortBuilder, ZSortDirections } from "./sort.mjs";
+import type { IZSort } from "./sort.mjs";
+import { ZSortBuilder, ZSortDirections } from "./sort.mjs";
 
 /**
  * A object that can deserialize an {@link IZSort} list from a string.

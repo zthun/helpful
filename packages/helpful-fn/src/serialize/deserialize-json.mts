@@ -1,4 +1,4 @@
-import { IZDeserialize } from "./deserialize.mjs";
+import type { IZDeserialize } from "./deserialize.mjs";
 
 /**
  * A deserializer that deserializes a JSON string.

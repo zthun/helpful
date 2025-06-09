@@ -1,10 +1,9 @@
-import {
-  registerDecorator,
+import type {
   ValidationArguments,
   ValidationOptions,
-  ValidatorConstraint,
   ValidatorConstraintInterface,
 } from "class-validator";
+import { registerDecorator, ValidatorConstraint } from "class-validator";
 
 /**
  * Represents a validator for forcing the limit of the data section of a data uri to be between a certain length.

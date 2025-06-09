@@ -5,7 +5,7 @@ import {
   isCollectionFilter,
 } from "./filter-collection.mjs";
 import { ZFilterLogicBuilder, isLogicFilter } from "./filter-logic.mjs";
-import { IZFilterMetadata } from "./filter-subject.mjs";
+import type { IZFilterMetadata } from "./filter-subject.mjs";
 import { ZFilterUnaryBuilder, isUnaryFilter } from "./filter-unary.mjs";
 
 describe("Filter", () => {

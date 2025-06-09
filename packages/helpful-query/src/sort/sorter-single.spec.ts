@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { IZSort, ZSortBuilder, ZSortDirection } from "./sort.mjs";
+import type { IZSort } from "./sort.mjs";
+import { ZSortBuilder, ZSortDirection } from "./sort.mjs";
 import { ZSorterSingle } from "./sorter-single.mjs";
 
 describe("ZSorterSingle", () => {

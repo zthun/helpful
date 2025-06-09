@@ -1,7 +1,10 @@
-import { IZCircusSetup, ZCircusKeyboardQwerty } from "@zthun/cirque";
-import { IZCircusReactHook, ZCircusSetupHook } from "@zthun/cirque-du-react";
-import { KeyboardEvent } from "react";
-import { Mock, afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import type { IZCircusSetup } from "@zthun/cirque";
+import { ZCircusKeyboardQwerty } from "@zthun/cirque";
+import type { IZCircusReactHook } from "@zthun/cirque-du-react";
+import { ZCircusSetupHook } from "@zthun/cirque-du-react";
+import type { KeyboardEvent } from "react";
+import type { Mock } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { useKeyboardActivate } from "./use-keyboard-activate.mjs";
 
 describe("useKeyboardActivate", () => {

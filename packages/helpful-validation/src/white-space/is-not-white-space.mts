@@ -1,9 +1,8 @@
-import {
-  registerDecorator,
+import type {
   ValidationOptions,
-  ValidatorConstraint,
   ValidatorConstraintInterface,
 } from "class-validator";
+import { registerDecorator, ValidatorConstraint } from "class-validator";
 import { trim } from "lodash-es";
 
 /**

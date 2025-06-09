@@ -1,5 +1,5 @@
 import { keyBy, values } from "lodash-es";
-import { IZFilterMetadata, IZFilterSubject } from "./filter-subject.mjs";
+import type { IZFilterMetadata, IZFilterSubject } from "./filter-subject.mjs";
 
 /**
  * The operators for an {@link IZFilterUnary} filter.

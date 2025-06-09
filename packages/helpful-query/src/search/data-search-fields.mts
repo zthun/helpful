@@ -1,5 +1,5 @@
 import { get } from "lodash-es";
-import { IZDataMatch } from "../match/data-match.mjs";
+import type { IZDataMatch } from "../match/data-match.mjs";
 
 /**
  * Represents a data match where the data qualifies if any fields contain the search text.

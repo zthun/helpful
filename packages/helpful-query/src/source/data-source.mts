@@ -1,4 +1,4 @@
-import { IZDataRequest } from "./data-request.mjs";
+import type { IZDataRequest } from "./data-request.mjs";
 
 /**
  * A representation of how to retrieve data from a given system or location.

@@ -1,10 +1,8 @@
-import { IZDataRequest } from "./data-request.mjs";
+import type { IZDataRequest } from "./data-request.mjs";
 import { filter, paginate, sort } from "./data-results.mjs";
-import {
-  IZDataSourceStaticOptions,
-  ZDataSourceStaticOptionsBuilder,
-} from "./data-source-static-options.mjs";
-import { IZDataSource } from "./data-source.mjs";
+import type { IZDataSourceStaticOptions } from "./data-source-static-options.mjs";
+import { ZDataSourceStaticOptionsBuilder } from "./data-source-static-options.mjs";
+import type { IZDataSource } from "./data-source.mjs";
 
 /**
  * Represents an in memory data source.

@@ -1,10 +1,9 @@
-import { IZCircusSetup } from "@zthun/cirque";
-import { IZCircusReactHook, ZCircusSetupHook } from "@zthun/cirque-du-react";
+import type { IZCircusSetup } from "@zthun/cirque";
+import type { IZCircusReactHook } from "@zthun/cirque-du-react";
+import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import {
-  ZAmbassadorReducer,
-  useAmbassadorState,
-} from "./use-ambassador-state.mjs";
+import type { ZAmbassadorReducer } from "./use-ambassador-state.mjs";
+import { useAmbassadorState } from "./use-ambassador-state.mjs";
 
 describe("useAmbassadorState", () => {
   let current: string | undefined;

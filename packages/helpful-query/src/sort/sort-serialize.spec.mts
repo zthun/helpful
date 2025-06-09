@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { ZSortSerialize } from "./sort-serialize.mjs";
-import { IZSort, ZSortBuilder } from "./sort.mjs";
+import type { IZSort } from "./sort.mjs";
+import { ZSortBuilder } from "./sort.mjs";
 
 describe("ZSortSerialize", () => {
   const createTestTarget = () => new ZSortSerialize();

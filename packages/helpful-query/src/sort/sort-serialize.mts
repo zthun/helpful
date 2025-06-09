@@ -1,4 +1,4 @@
-import { IZSort } from "./sort.mjs";
+import type { IZSort } from "./sort.mjs";
 
 /**
  * An object that can serialize an {@link IZSort} list to a string.

@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from "vitest";
 
-import { IZEmailEnvelope, ZEmailEnvelopeBuilder } from "./email-envelope.mjs";
+import type { IZEmailEnvelope } from "./email-envelope.mjs";
+import { ZEmailEnvelopeBuilder } from "./email-envelope.mjs";
 import { ZEmailBuilder } from "./email.mjs";
 
 describe("ZEmailBuilder.", () => {

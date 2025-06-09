@@ -1,4 +1,4 @@
-import { IZEmailContact } from "./email-contact.mjs";
+import type { IZEmailContact } from "./email-contact.mjs";
 
 /**
  * Represents an email envelope of information about who the email is from and where it's going to.

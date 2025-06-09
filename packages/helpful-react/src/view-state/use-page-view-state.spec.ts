@@ -1,9 +1,9 @@
-import { IZCircusSetup } from "@zthun/cirque";
-import { IZCircusReactHook, ZCircusSetupHook } from "@zthun/cirque-du-react";
+import type { IZCircusSetup } from "@zthun/cirque";
+import type { IZCircusReactHook } from "@zthun/cirque-du-react";
+import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { sleep } from "@zthun/helpful-fn";
+import type { IZDataRequest, IZDataSource } from "@zthun/helpful-query";
 import {
-  IZDataRequest,
-  IZDataSource,
   ZDataRequestBuilder,
   ZDataSourceStatic,
   ZDataSourceStaticOptionsBuilder,

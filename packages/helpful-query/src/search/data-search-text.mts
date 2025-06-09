@@ -1,4 +1,4 @@
-import { IZDataMatch } from "../match/data-match.mjs";
+import type { IZDataMatch } from "../match/data-match.mjs";
 
 /**
  * Represents a data match for text strings.

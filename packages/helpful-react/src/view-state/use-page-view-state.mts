@@ -1,5 +1,5 @@
 import { countBuckets } from "@zthun/helpful-fn";
-import { IZDataRequest, IZDataSource } from "@zthun/helpful-query";
+import type { IZDataRequest, IZDataSource } from "@zthun/helpful-query";
 import { useMemo } from "react";
 import { asStateData, useAsyncState } from "../async-state/use-async-state.mjs";
 

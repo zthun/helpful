@@ -1,5 +1,6 @@
-import { IZSort, ZSortBuilder, ZSortDirection } from "./sort.mjs";
-import { IZSorter } from "./sorter.mjs";
+import type { IZSort } from "./sort.mjs";
+import { ZSortBuilder, ZSortDirection } from "./sort.mjs";
+import type { IZSorter } from "./sorter.mjs";
 
 /**
  * Represents a sorter that simulates a single sort at a time.

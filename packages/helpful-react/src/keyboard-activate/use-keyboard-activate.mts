@@ -1,5 +1,6 @@
 import { firstDefined } from "@zthun/helpful-fn";
-import { KeyboardEvent, KeyboardEventHandler, useMemo } from "react";
+import type { KeyboardEvent, KeyboardEventHandler } from "react";
+import { useMemo } from "react";
 
 /**
  * A set of keyboard interactions that should be set on an element.

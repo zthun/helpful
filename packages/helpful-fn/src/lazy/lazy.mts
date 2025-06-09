@@ -1,4 +1,4 @@
-import { ZSupplierAsync } from "../function/supplier.mjs";
+import type { ZSupplierAsync } from "../function/supplier.mjs";
 
 export class ZLazy<T> {
   private _value: Promise<T>;

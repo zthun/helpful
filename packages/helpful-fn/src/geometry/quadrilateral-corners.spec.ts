@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import {
+import type {
   IZQuadrilateralCorners,
-  ZQuadrilateralCornersBuilder,
   ZQuadrilateralCornersLike,
 } from "./quadrilateral-corners.mjs";
+import { ZQuadrilateralCornersBuilder } from "./quadrilateral-corners.mjs";
 
 describe("Setting all 4 corners at the same time", () => {
   it("should set the same value", () => {
