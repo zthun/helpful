@@ -10,7 +10,6 @@
     "url": "https://github.com/zthun/helpful",
     "directory": "packages/helpful-web"
   },
-  "main": "./dist/main.js",
   "scripts": {
     "build": "typedoc"
   },
