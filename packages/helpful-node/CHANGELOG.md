@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/zthun/helpful/compare/v7.2.1...v8.0.0) (2025-06-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* file system and walk have been deleted
+* build now uses node next module resolution
+
+### Features
+
+* file system and walk have been deleted ([3e88f38](https://github.com/zthun/helpful/commit/3e88f38b916d0973f2520566526efbd1519ed6af))
+
+
+### Build System
+
+* build now uses node next module resolution ([2129477](https://github.com/zthun/helpful/commit/2129477b1288402b91f2a1f5c4bd583e5eaeb620))
+
+
+
 ## [7.2.1](https://github.com/zthun/helpful/compare/v7.2.0...v7.2.1) (2025-05-23)
 
 **Note:** Version bump only for package @zthun/helpful-node
