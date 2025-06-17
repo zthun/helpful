@@ -3188,7 +3188,6 @@ __metadata:
   dependencies:
     "@zthun/helpful-reflection": "npm:^8.0.0"
     "@zthun/janitor-build-config": "npm:^19.1.5"
-    reflect-metadata: "npm:^0.2.2"
     vite: "npm:^6.3.5"
     vitest: "npm:^3.2.3"
   languageName: unknown
