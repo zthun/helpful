@@ -10,6 +10,7 @@
       "@zthun/helpful-node": ["helpful-node/src/index.mts"],
       "@zthun/helpful-query": ["helpful-query/src/index.mts"],
       "@zthun/helpful-react": ["helpful-react/src/index.mts"],
+      "@zthun/helpful-reflection": ["helpful-reflection/src/index.mts"],
       "@zthun/helpful-validation": ["helpful-validation/src/index.mts"]
     }
   },
