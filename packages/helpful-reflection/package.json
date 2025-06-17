@@ -1,0 +1,41 @@
+{
+  "name": "@zthun/helpful-reflection",
+  "version": "8.0.0",
+  "description": "Helpful decorators built around reflect-metadata.",
+  "author": "Anthony Bonta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zthun/helpful",
+    "directory": "packages/helpful-reflection"
+  },
+  "type": "module",
+  "types": "./dist/index.d.mts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    "types": "./dist/index.d.mts",
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@zthun/helpful-fn": "^8.0.0",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@zthun/janitor-build-config": "^19.1.5",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false
+}
