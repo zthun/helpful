@@ -13,7 +13,7 @@ export interface IZSorter {
    *        The subject to sort.  If this is undefined, the subject
    *        should be considered the empty string (the object itself).
    *
-   * @returns -
+   * @returns
    *        The current sort index.
    */
   index(subject?: string): number;
@@ -34,7 +34,7 @@ export interface IZSorter {
    *        The subject to sort.  Undefined is considered the
    *        empty string.
    *
-   * @returns -
+   * @returns
    *        The updated sort list.
    */
   sort(subject?: string): IZSort[];
