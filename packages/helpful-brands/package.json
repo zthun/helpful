@@ -24,6 +24,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "@zthun/helpful-reflection": "^8.0.0"
+  },
   "devDependencies": {
     "@zthun/janitor-build-config": "^19.1.5",
     "vite": "^6.3.5",
