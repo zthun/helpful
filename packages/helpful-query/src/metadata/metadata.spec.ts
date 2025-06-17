@@ -87,6 +87,14 @@ describe("Metadata Builder", () => {
         );
       });
     });
+
+    describe("Boolean", () => {
+      it("should set the type", () => {
+        expect(createTestTarget().boolean().build().type).toEqual(
+          ZMetadataType.Boolean,
+        );
+      });
+    });
   });
 
   describe("Format", () => {

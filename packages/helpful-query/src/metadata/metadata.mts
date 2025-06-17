@@ -23,6 +23,10 @@ export enum ZMetadataType {
    */
   Text = "text",
   /**
+   * A flag.
+   */
+  Boolean = "boolean",
+  /**
    * An icon value.
    *
    * The underlying metadata cls should be set that
@@ -173,7 +177,7 @@ export class ZMetadataBuilder {
    *        is undefined, then a new
    *        guid will be set as the value.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public id(val = createGuid()): this {
@@ -187,7 +191,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public path(val: string): this {
@@ -201,7 +205,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public name(val: string): this {
@@ -215,7 +219,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public format(val?: string): this {
@@ -229,7 +233,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public cls(val?: string): this {
@@ -243,7 +247,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public precision(val?: number): this {
@@ -257,7 +261,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public width(val?: string): this {
@@ -271,7 +275,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public height(val?: string): this {
@@ -285,7 +289,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public square(val?: string): this {
@@ -298,7 +302,7 @@ export class ZMetadataBuilder {
    * @param val -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public type(val: ZMetadataType): this {
@@ -309,7 +313,7 @@ export class ZMetadataBuilder {
   /**
    * Sets the type as text.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public text = this.type.bind(this, ZMetadataType.Text);
@@ -317,7 +321,7 @@ export class ZMetadataBuilder {
   /**
    * Sets the type as custom.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public custom = this.type.bind(this, ZMetadataType.Custom);
@@ -325,7 +329,7 @@ export class ZMetadataBuilder {
   /**
    * Sets the type as date.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public date = this.type.bind(this, ZMetadataType.Date);
@@ -333,7 +337,7 @@ export class ZMetadataBuilder {
   /**
    * Sets the type as a number.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public number = this.type.bind(this, ZMetadataType.Number);
@@ -349,10 +353,18 @@ export class ZMetadataBuilder {
   /**
    * Sets the type as an image.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public image = this.type.bind(this, ZMetadataType.Image);
+
+  /**
+   * Sets the type as a boolean.
+   *
+   * @returns
+   *        This object.
+   */
+  public boolean = this.type.bind(this, ZMetadataType.Boolean);
 
   /**
    * Sets the metadata as sortable.
@@ -360,7 +372,7 @@ export class ZMetadataBuilder {
    * @param value -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public sortable(value = true) {
@@ -374,7 +386,7 @@ export class ZMetadataBuilder {
    * @param value -
    *        The value to set.
    *
-   * @returns -
+   * @returns
    *        This object.
    */
   public editable(value = true) {
@@ -388,7 +400,7 @@ export class ZMetadataBuilder {
    * @param other -
    *        The metadata to copy.
    *
-   * @returns -
+   * @returns
    *         This object.
    */
   public copy(other: IZMetadata): this {
@@ -399,7 +411,7 @@ export class ZMetadataBuilder {
   /**
    * Returns the constructed metadata.
    *
-   * @returns -
+   * @returns
    *        The built metadata.
    */
   public build(): IZMetadata {
