@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/zthun/helpful/compare/v9.0.0...v9.1.0) (2025-06-17)
+
+
+### Features
+
+* add boolean type to metadata ([004a956](https://github.com/zthun/helpful/commit/004a95667ecb53fb5839493120377da0d1d2952a))
+
+
+
 ## [9.0.0](https://github.com/zthun/helpful/compare/v8.0.0...v9.0.0) (2025-06-17)
 
 **Note:** Version bump only for package @zthun/helpful-query
