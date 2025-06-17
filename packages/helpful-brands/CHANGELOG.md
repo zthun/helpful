@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.0](https://github.com/zthun/helpful/compare/v8.0.0...v9.0.0) (2025-06-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* all known brands from ZBrandBuilder have been moved to ZBrandKnown
+* global array, ZBrands, has been replaced with ZBrandKnown.all()
+
+### Code Refactoring
+
+* all known brands from ZBrandBuilder have been moved to ZBrandKnown ([df8cc41](https://github.com/zthun/helpful/commit/df8cc41a6a9f0dfbd22438db0d8b0897db7c2bc0))
+* global array, ZBrands, has been replaced with ZBrandKnown.all() ([aabd57f](https://github.com/zthun/helpful/commit/aabd57fb1bbae8de9cacc03294c7502e47819b47))
+
+
+
 ## [8.0.0](https://github.com/zthun/helpful/compare/v7.2.1...v8.0.0) (2025-06-10)
 
 **Note:** Version bump only for package @zthun/helpful-brands

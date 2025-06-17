@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.0](https://github.com/zthun/helpful/compare/v8.0.0...v9.0.0) (2025-06-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* all known brands from ZBrandBuilder have been moved to ZBrandKnown
+* global array, ZBrands, has been replaced with ZBrandKnown.all()
+* helpful-node has been removed
+
+### Features
+
+* helpful-node has been removed ([c6a6681](https://github.com/zthun/helpful/commit/c6a668114c9a74709706f03462c37ff50db72f7d))
+* helpful-reflection add helpful decorators based on reflect-metadata ([86f8f50](https://github.com/zthun/helpful/commit/86f8f50b86bb001ded6012f2a037aaf9f1cb2b9c))
+* tag allows you to decorate any method to take it with a label ([efe9cfe](https://github.com/zthun/helpful/commit/efe9cfed5a828cc963177c629a4d836deb3da15f))
+
+
+### Bug Fixes
+
+* separates type imports from shakable imports ([80e6e94](https://github.com/zthun/helpful/commit/80e6e94040e8d337bb6047ff70bf99fdeb5b0a80))
+
+
+### Code Refactoring
+
+* all known brands from ZBrandBuilder have been moved to ZBrandKnown ([df8cc41](https://github.com/zthun/helpful/commit/df8cc41a6a9f0dfbd22438db0d8b0897db7c2bc0))
+* global array, ZBrands, has been replaced with ZBrandKnown.all() ([aabd57f](https://github.com/zthun/helpful/commit/aabd57fb1bbae8de9cacc03294c7502e47819b47))
+
+
+
 ## [8.0.0](https://github.com/zthun/helpful/compare/v7.2.1...v8.0.0) (2025-06-10)
 
 
