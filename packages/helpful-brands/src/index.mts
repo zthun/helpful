@@ -1,2 +1,2 @@
+export * from "./brand/brand-known.mjs";
 export * from "./brand/brand.mjs";
-export * from "./brand/brands.mjs";
