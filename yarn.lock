@@ -3294,6 +3294,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-brands@workspace:packages/helpful-brands"
   dependencies:
+    "@zthun/helpful-query": "npm:^9.1.0"
     "@zthun/helpful-reflection": "npm:^9.1.0"
     "@zthun/janitor-build-config": "npm:^19.2.0"
     vite: "npm:^6.3.5"

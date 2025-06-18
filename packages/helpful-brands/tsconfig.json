@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@zthun/helpful-query": ["../helpful-query/src/index.mts"],
       "@zthun/helpful-reflection": ["../helpful-reflection/src/index.mts"]
     }
   },

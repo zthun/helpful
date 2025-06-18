@@ -25,6 +25,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@zthun/helpful-query": "^9.1.0",
     "@zthun/helpful-reflection": "^9.1.0"
   },
   "devDependencies": {
