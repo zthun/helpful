@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.2.0](https://github.com/zthun/helpful/compare/v9.1.0...v9.2.0) (2025-06-18)
+
+**Note:** Version bump only for package @zthun/helpful-query
+
+
+
+
+
 ## [9.1.0](https://github.com/zthun/helpful/compare/v9.0.0...v9.1.0) (2025-06-17)
 
 
