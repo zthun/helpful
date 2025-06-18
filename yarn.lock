@@ -3198,11 +3198,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zthun/helpful-brands@npm:^9.1.0, @zthun/helpful-brands@workspace:packages/helpful-brands":
+"@zthun/helpful-brands@npm:^9.2.0, @zthun/helpful-brands@workspace:packages/helpful-brands":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-brands@workspace:packages/helpful-brands"
   dependencies:
-    "@zthun/helpful-query": "npm:^9.1.0"
+    "@zthun/helpful-query": "npm:^9.2.0"
     "@zthun/helpful-reflection": "npm:^9.1.0"
     "@zthun/janitor-build-config": "npm:^19.2.0"
     lodash-es: "npm:^4.17.21"
@@ -3254,7 +3254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zthun/helpful-query@npm:^9.1.0, @zthun/helpful-query@workspace:packages/helpful-query":
+"@zthun/helpful-query@npm:^9.2.0, @zthun/helpful-query@workspace:packages/helpful-query":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-query@workspace:packages/helpful-query"
   dependencies:
@@ -3266,14 +3266,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/helpful-react@npm:^9.1.0, @zthun/helpful-react@workspace:packages/helpful-react":
+"@zthun/helpful-react@npm:^9.2.0, @zthun/helpful-react@workspace:packages/helpful-react":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-react@workspace:packages/helpful-react"
   dependencies:
     "@zthun/cirque": "npm:^7.1.3"
     "@zthun/cirque-du-react": "npm:^7.1.3"
     "@zthun/helpful-fn": "npm:^9.1.0"
-    "@zthun/helpful-query": "npm:^9.1.0"
+    "@zthun/helpful-query": "npm:^9.2.0"
     "@zthun/janitor-build-config": "npm:^19.2.0"
     lodash-es: "npm:^4.17.21"
     react: "npm:^19.1.0"
@@ -3322,12 +3322,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-web@workspace:packages/helpful-web"
   dependencies:
-    "@zthun/helpful-brands": "npm:^9.1.0"
+    "@zthun/helpful-brands": "npm:^9.2.0"
     "@zthun/helpful-fn": "npm:^9.1.0"
     "@zthun/helpful-internet": "npm:^9.1.0"
     "@zthun/helpful-node": "npm:^8.0.0"
-    "@zthun/helpful-query": "npm:^9.1.0"
-    "@zthun/helpful-react": "npm:^9.1.0"
+    "@zthun/helpful-query": "npm:^9.2.0"
+    "@zthun/helpful-react": "npm:^9.2.0"
     "@zthun/helpful-validation": "npm:^9.1.0"
     "@zthun/janitor-build-config": "npm:^19.2.0"
     typedoc: "npm:^0.28.5"
