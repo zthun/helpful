@@ -23,7 +23,7 @@ export class ZSorterSingle implements IZSorter {
   }
 
   public sorted(subject?: string): ZSortDirection | undefined {
-    return this._sorted && this._sorted?.subject === subject
+    return this._sorted && this._sorted.subject === subject
       ? this._sorted.direction
       : undefined;
   }

@@ -165,9 +165,9 @@ export class ZDataRequestBuilder {
       delete this._request.filter;
     } else {
       const f =
-        typeof filter === "object"
-          ? filter
-          : tryFallback(() => new ZFilterDeserialize().deserialize(filter));
+        typeof filter === "string"
+          ? tryFallback(() => new ZFilterDeserialize().deserialize(filter))
+          : filter;
       this._request.filter = f;
     }
     return this;
