@@ -24,10 +24,10 @@ export function isTagged(
   target: any,
   property?: string | symbol,
 ): boolean {
-  if (
-    target == null ||
-    (typeof target !== "function" && typeof target !== "object")
-  ) {
+  const candidates = ["function", "object"];
+  const type = typeof target;
+
+  if (target == null || !candidates.includes(type)) {
     return false;
   }
 
