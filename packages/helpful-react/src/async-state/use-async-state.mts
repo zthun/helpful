@@ -1,8 +1,7 @@
 import { createError } from "@zthun/helpful-fn";
 import type { DependencyList } from "react";
 import { useEffect, useRef, useState } from "react";
-import type { Subscription } from "rxjs";
-import { defer, from } from "rxjs";
+import { Subscription, defer, from } from "rxjs";
 
 /**
  * The value that will be set on an ZAsyncDataState when the data is being loaded.
@@ -55,10 +54,10 @@ export function useAsyncState<T>(
   deps: DependencyList = [],
 ): ZAsyncDataTuple<T> {
   const [current, setCurrent] = useState<ZAsyncDataState<T>>(ZAsyncLoading);
-  const subscription = useRef<Subscription | undefined>(undefined);
+  const subscription = useRef<Subscription>(new Subscription());
 
   const _refresh = () => {
-    subscription.current?.unsubscribe();
+    subscription.current.unsubscribe();
     subscription.current = defer(() => {
       setCurrent(ZAsyncLoading);
       return from(load());
@@ -79,7 +78,7 @@ export function useAsyncState<T>(
 
   useEffect(() => {
     _refresh();
-    return () => subscription.current?.unsubscribe();
+    return () => subscription.current.unsubscribe();
   }, deps);
 
   return [current, refresh];
