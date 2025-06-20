@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.2.0](https://github.com/zthun/helpful/compare/v9.1.0...v9.2.0) (2025-06-18)
+
+
+### Features
+
+* brand data source factory creates a data source to query brands ([e5dd469](https://github.com/zthun/helpful/commit/e5dd46920615d0f0567bd4a8081fed5a94d55f6f))
+* you can now retrieve the metadata for a brand object ([d31d032](https://github.com/zthun/helpful/commit/d31d032509731f1e34c91b1d91a8179ace3bb345))
+
+
+
 ## [9.1.0](https://github.com/zthun/helpful/compare/v9.0.0...v9.1.0) (2025-06-17)
 
 **Note:** Version bump only for package @zthun/helpful-brands

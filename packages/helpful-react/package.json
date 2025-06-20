@@ -1,6 +1,6 @@
 {
   "name": "@zthun/helpful-react",
-  "version": "9.1.0",
+  "version": "9.2.0",
   "description": "Helpful library that implements some react hooks and helpers.",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@zthun/helpful-fn": "^9.1.0",
-    "@zthun/helpful-query": "^9.1.0",
+    "@zthun/helpful-query": "^9.2.0",
     "lodash-es": "^4.17.21",
     "rxjs": "^7.8.2"
   },
