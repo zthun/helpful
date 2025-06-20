@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.3.0](https://github.com/zthun/helpful/compare/v9.2.0...v9.3.0) (2025-06-20)
+
+
+### Features
+
+* metadata file has been added ([de3e24b](https://github.com/zthun/helpful/commit/de3e24bbf506584844adda406c9029f847055fc5))
+
+
+### Bug Fixes
+
+* well known icon classes is now an enum in lieu of an abstract class ([451cce7](https://github.com/zthun/helpful/commit/451cce748fef279064cc6ac54f89b7c8a94972e5))
+
+
+
 ## [9.2.0](https://github.com/zthun/helpful/compare/v9.1.0...v9.2.0) (2025-06-18)
 
 
