@@ -13,8 +13,10 @@
  *        null.  False otherwise.
  */
 export function isEmptyObject(candidate: any): candidate is {} {
+  const candidateType = typeof candidate;
+
   return (
     candidate == null ||
-    (typeof candidate === "object" && Object.keys(candidate).length === 0)
+    (candidateType === "object" && Object.keys(candidate).length === 0)
   );
 }
