@@ -23,6 +23,12 @@ export enum ZMetadataType {
    */
   Text = "text",
   /**
+   * A text field that represents a path to a file.
+   *
+   * Should behave the same as a text field.
+   */
+  File = "file",
+  /**
    * A flag.
    */
   Boolean = "boolean",
@@ -64,22 +70,29 @@ export interface IZMetadata {
   id: string;
 
   /**
-   * The field path into the entity that targets
-   * the value.
-   */
-  path?: string;
-
-  /**
    * Human readable name of the field data.
    */
   name: string;
 
   /**
    * The metadata type.
-   *
-   * The default value should be a string.
    */
   type: ZMetadataType;
+
+  /**
+   * The field path into the entity that targets
+   * the value.
+   */
+  path?: string;
+
+  /**
+   * An explanation of what the field is for.
+   *
+   * This can act like a comment.  Those looking
+   * at the metadata can use this to get a better
+   * idea of what the value represents.
+   */
+  description?: string;
 
   /**
    * The expected format.
@@ -186,6 +199,20 @@ export class ZMetadataBuilder {
   }
 
   /**
+   * Sets the name of the metadata.
+   *
+   * @param val -
+   *        The value to set.
+   *
+   * @returns
+   *        This object.
+   */
+  public name(val: string): this {
+    this._metadata.name = val;
+    return this;
+  }
+
+  /**
    * Sets the path of the metadata.
    *
    * @param val -
@@ -200,7 +227,7 @@ export class ZMetadataBuilder {
   }
 
   /**
-   * Sets the name of the metadata.
+   * Sets the description for the field.
    *
    * @param val -
    *        The value to set.
@@ -208,8 +235,8 @@ export class ZMetadataBuilder {
    * @returns
    *        This object.
    */
-  public name(val: string): this {
-    this._metadata.name = val;
+  public description(val: string): this {
+    this._metadata.description = val;
     return this;
   }
 
@@ -317,6 +344,14 @@ export class ZMetadataBuilder {
    *        This object.
    */
   public text = this.type.bind(this, ZMetadataType.Text);
+
+  /**
+   * Sets the type as file.
+   *
+   * @returns
+   *        This object.
+   */
+  public file = this.type.bind(this, ZMetadataType.File);
 
   /**
    * Sets the type as custom.

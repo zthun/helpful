@@ -25,6 +25,15 @@ describe("Metadata Builder", () => {
     });
   });
 
+  describe("Description", () => {
+    it("should set the value", () => {
+      const expected = "Description of the field";
+      expect(
+        createTestTarget().description(expected).build().description,
+      ).toEqual(expected);
+    });
+  });
+
   describe("Flag", () => {
     describe("Editable", () => {
       it("should toggle on", () => {
