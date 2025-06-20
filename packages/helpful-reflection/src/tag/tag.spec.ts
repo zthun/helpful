@@ -69,6 +69,10 @@ describe("ZTag", () => {
       expect(isTagged("blue", null)).toBeFalsy();
     });
 
+    it("should not be tagged for undefined", () => {
+      expect(isTagged("blue", undefined)).toBeFalsy();
+    });
+
     it("should not be tagged for intrinsic values", () => {
       expect(isTagged("green", "decorators-not-supported")).toBeFalsy();
     });
