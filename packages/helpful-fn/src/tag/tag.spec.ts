@@ -25,6 +25,16 @@ describe("Tag", () => {
   });
 
   describe("HTML", () => {
+    it("should be empty", () => {
+      // Arrange.
+
+      // Act.
+      const actual = html``;
+
+      // Assert.
+      expect(actual).toEqual("");
+    });
+
     it("should highlight", () => {
       // Arrange.
       const block = "block";
