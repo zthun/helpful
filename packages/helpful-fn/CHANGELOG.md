@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.4.0](https://github.com/zthun/helpful/compare/v9.3.0...v9.4.0) (2025-06-21)
+
+
+### Features
+
+* detokenize allows you to replace interpolation token values in a string ([969808d](https://github.com/zthun/helpful/commit/969808dbb72c4763ed8d272792d4069a152e68bb))
+* nullable and optional types make it quick to declare or null or undefined ([b685927](https://github.com/zthun/helpful/commit/b685927a737232926198f27141f6c762095bf5e7))
+
+
+
 ## [9.3.0](https://github.com/zthun/helpful/compare/v9.2.0...v9.3.0) (2025-06-20)
 
 **Note:** Version bump only for package @zthun/helpful-fn

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.4.0](https://github.com/zthun/helpful/compare/v9.3.0...v9.4.0) (2025-06-21)
+
+
+### Features
+
+* metadata can now supply a fallback value for the field ([188d214](https://github.com/zthun/helpful/commit/188d214853926bb9d2c9bf47f1be1dbfd881b7b1))
+
+
+
 ## [9.3.0](https://github.com/zthun/helpful/compare/v9.2.0...v9.3.0) (2025-06-20)
 
 
