@@ -34,6 +34,15 @@ describe("Metadata Builder", () => {
     });
   });
 
+  describe("Fallback", () => {
+    it("should set the value", () => {
+      const expected = "Default Value";
+      expect(createTestTarget().fallback(expected).build().fallback).toEqual(
+        expected,
+      );
+    });
+  });
+
   describe("Flag", () => {
     describe("Editable", () => {
       it("should toggle on", () => {

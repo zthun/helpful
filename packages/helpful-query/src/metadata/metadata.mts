@@ -95,6 +95,12 @@ export interface IZMetadata {
   description?: string;
 
   /**
+   * The default value that should be used for null or undefined
+   * representations of this value.
+   */
+  fallback?: any;
+
+  /**
    * The expected format.
    *
    * The usage of this depends on the type.
@@ -237,6 +243,20 @@ export class ZMetadataBuilder {
    */
   public description(val: string): this {
     this._metadata.description = val;
+    return this;
+  }
+
+  /**
+   * Sets the fallback value for the field.
+   *
+   * @param val -
+   *        The fallback value.
+   *
+   * @returns
+   *        This object.
+   */
+  public fallback(val: any): this {
+    this._metadata.fallback = val;
     return this;
   }
 
