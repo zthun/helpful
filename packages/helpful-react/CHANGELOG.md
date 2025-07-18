@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.4.2](https://github.com/zthun/helpful/compare/v9.4.1...v9.4.2) (2025-07-18)
+
+**Note:** Version bump only for package @zthun/helpful-react
+
+
+
+
+
 ## [9.4.1](https://github.com/zthun/helpful/compare/v9.4.0...v9.4.1) (2025-06-22)
 
 **Note:** Version bump only for package @zthun/helpful-react
