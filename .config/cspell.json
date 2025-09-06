@@ -16,6 +16,7 @@
     "fullpath",
     "gteq",
     "kickstarter",
+    "libc",
     "lteq",
     "prosus",
     "proxyrc",
