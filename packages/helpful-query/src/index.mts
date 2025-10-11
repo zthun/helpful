@@ -1,3 +1,4 @@
+export * from "./aggregate/aggregate.mjs";
 export * from "./filter/data-filter-fields.mjs";
 export * from "./filter/filter-binary.mjs";
 export * from "./filter/filter-collection.mjs";
