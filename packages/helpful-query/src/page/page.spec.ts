@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { ZPageBuilder } from "./page.mjs";
 
 describe("ZPage", () => {
-  const createTestTarget = () => new ZPageBuilder<number>();
+  const createTestTarget = () => new ZPageBuilder();
 
   describe("Empty", () => {
     it("should set the count to 0", () => {

@@ -18,7 +18,7 @@ export interface IZPage<T> {
 /**
  * A builder for a page object.
  */
-export class ZPageBuilder<T> {
+export class ZPageBuilder<T = unknown> {
   private _page: IZPage<T>;
 
   /**
@@ -50,7 +50,7 @@ export class ZPageBuilder<T> {
    * @returns
    *        This object.
    */
-  public singleton(item: T) {
+  public singleton<D>(item: D) {
     return this.all([item]);
   }
 
@@ -63,7 +63,7 @@ export class ZPageBuilder<T> {
    * @returns
    *        This object.
    */
-  public all(data: T[]) {
+  public all<D>(data: D[]) {
     return this.data(data).count(data.length);
   }
 
@@ -76,9 +76,11 @@ export class ZPageBuilder<T> {
    * @returns
    *        This object.
    */
-  public data(data: T[]) {
-    this._page.data = data.slice();
-    return this;
+  public data<D>(data: D[]): ZPageBuilder<D> {
+    const current = this._page as unknown as IZPage<D>;
+    const next = new ZPageBuilder<D>().copy(current);
+    next._page.data = data.slice();
+    return next;
   }
 
   /**
