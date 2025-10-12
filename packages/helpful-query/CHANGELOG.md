@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.5.0](https://github.com/zthun/helpful/compare/v9.4.5...v9.5.0) (2025-10-11)
+
+
+### Features
+
+* added an aggregate model ([f649096](https://github.com/zthun/helpful/commit/f649096f1be47bb5332cbaca30bbcf8ea0c356f4))
+
+
+
 ## [9.4.5](https://github.com/zthun/helpful/compare/v9.4.4...v9.4.5) (2025-10-04)
 
 **Note:** Version bump only for package @zthun/helpful-query
