@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.6.0](https://github.com/zthun/helpful/compare/v9.5.1...v9.6.0) (2025-10-14)
+
+
+### Features
+
+* useSyncState add support for a state that updates when ([5ecde96](https://github.com/zthun/helpful/commit/5ecde967fc392cb41a6e24f117b807a72d2cee26))
+
+
+
 ## [9.5.1](https://github.com/zthun/helpful/compare/v9.5.0...v9.5.1) (2025-10-12)
 
 **Note:** Version bump only for package @zthun/helpful-react

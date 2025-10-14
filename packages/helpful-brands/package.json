@@ -1,6 +1,6 @@
 {
   "name": "@zthun/helpful-brands",
-  "version": "9.5.1",
+  "version": "9.6.0",
   "description": "Helpful brand builder useful for static data for demos of front end components and backend services.",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -25,8 +25,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@zthun/helpful-query": "^9.5.1",
-    "@zthun/helpful-reflection": "^9.4.5"
+    "@zthun/helpful-query": "^9.6.0",
+    "@zthun/helpful-reflection": "^9.6.0"
   },
   "devDependencies": {
     "@zthun/janitor-build-config": "^19.3.6",
