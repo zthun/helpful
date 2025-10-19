@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.1](https://github.com/zthun/helpful/compare/v9.7.0...v9.7.1) (2025-10-19)
+
+**Note:** Version bump only for package @zthun/helpful-web
+
+
+
+
+
 ## [9.7.0](https://github.com/zthun/helpful/compare/v9.6.0...v9.7.0) (2025-10-19)
 
 **Note:** Version bump only for package @zthun/helpful-web
