@@ -605,6 +605,58 @@ describe("ZDataSourceStatic", () => {
           );
         });
       });
+
+      describe("StartsWith", () => {
+        it("should match data that starts with the value [path]", async () => {
+          data = [
+            { name: "Batman" },
+            { name: "Superman" },
+            { name: "Green Lantern" },
+          ];
+          await assertMatchesData(
+            [data[0]],
+            new ZFilterBinaryBuilder()
+              .subject("name")
+              .startsWith()
+              .value("Bat")
+              .build(),
+          );
+        });
+
+        it("should match data that starts with the value [self]", async () => {
+          data = ["Batman", "Superman", "Green Lantern"];
+          await assertMatchesData(
+            ["Batman"],
+            new ZFilterBinaryBuilder().startsWith().value("Bat").build(),
+          );
+        });
+      });
+
+      describe("EndsWith", () => {
+        it("should match data that ends with the value [path]", async () => {
+          data = [
+            { name: "Batman" },
+            { name: "Superman" },
+            { name: "Green Lantern" },
+          ];
+          await assertMatchesData(
+            [data[2]],
+            new ZFilterBinaryBuilder()
+              .subject("name")
+              .endsWith()
+              .value("Lantern")
+              .build(),
+          );
+        });
+
+        it("should match data that ends with the value [self]", async () => {
+          data = ["Batman", "Superman", "Green Lantern"];
+          await assertMatchesData(
+            ["Batman", "Superman"],
+            new ZFilterBinaryBuilder().endsWith().value("man").build(),
+          );
+        });
+      });
     });
 
     describe("Collection", () => {

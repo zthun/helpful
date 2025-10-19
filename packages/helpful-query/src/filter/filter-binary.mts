@@ -33,6 +33,14 @@ export enum ZOperatorBinary {
    * Like (Contains)
    */
   Like = "like",
+  /**
+   * Starts with
+   */
+  StartsWith = "sw",
+  /**
+   * Ends with
+   */
+  EndsWith = "ew",
 }
 
 /**
@@ -157,19 +165,36 @@ export class ZFilterBinaryBuilder {
    * Constructs a greater than or equal to filter.
    *
    * @returns
-   *        A new filter builder object.
+   *        This object.
    */
   public greaterThanEqualTo = this.operator.bind(
     this,
     ZOperatorBinary.GreaterThanEqualTo,
   );
+
   /**
    * Constructs a like filter.
    *
    * @returns
-   *        A new filter builder object.
+   *        This object.
    */
   public like = this.operator.bind(this, ZOperatorBinary.Like);
+
+  /**
+   * Constructs a starts with filter.
+   *
+   * @returns
+   *        This object.
+   */
+  public startsWith = this.operator.bind(this, ZOperatorBinary.StartsWith);
+
+  /**
+   * Constructs an ends with filter.
+   *
+   * @returns
+   *        This object.
+   */
+  public endsWith = this.operator.bind(this, ZOperatorBinary.EndsWith);
 
   /**
    * Returns a copy of the currently built filter.
@@ -234,4 +259,6 @@ export const ZBinaryComparators: Record<
   [ZOperatorBinary.LessThan]: (d, v) => d < v,
   [ZOperatorBinary.LessThanEqualTo]: (d, v) => d <= v,
   [ZOperatorBinary.Like]: (d, v) => `${d}`.indexOf(`${v}`) >= 0,
+  [ZOperatorBinary.StartsWith]: (d, v) => `${d}`.startsWith(`${v}`),
+  [ZOperatorBinary.EndsWith]: (d, v) => `${d}`.endsWith(`${v}`),
 };
