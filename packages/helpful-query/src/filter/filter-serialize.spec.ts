@@ -84,6 +84,18 @@ describe("ZFilterSerialize", () => {
         assertSerializesWithOperator(ZOperatorBinary.Like);
       });
     });
+
+    describe("StartsWith", () => {
+      it("should serialize", () => {
+        assertSerializesWithOperator(ZOperatorBinary.StartsWith);
+      });
+    });
+
+    describe("EndsWith", () => {
+      it("should serialize", () => {
+        assertSerializesWithOperator(ZOperatorBinary.EndsWith);
+      });
+    });
   });
 
   describe("Unary", () => {

@@ -201,6 +201,32 @@ describe("ZFilterDeserialize", () => {
         assertParsesFilterOperator(operator, filter);
       });
     });
+
+    describe("StartsWith", () => {
+      const operator = ZOperatorBinary.StartsWith;
+      const filter = `${operator}(subject, "value")`;
+
+      it("should parse filter type", () => {
+        assertParsesFilterType(isBinaryFilter, filter);
+      });
+
+      it("sets correct operator", () => {
+        assertParsesFilterOperator(operator, filter);
+      });
+    });
+
+    describe("EndsWith", () => {
+      const operator = ZOperatorBinary.EndsWith;
+      const filter = `${operator}(subject, "value")`;
+
+      it("should parse filter type", () => {
+        assertParsesFilterType(isBinaryFilter, filter);
+      });
+
+      it("sets correct operator", () => {
+        assertParsesFilterOperator(operator, filter);
+      });
+    });
   });
 
   describe("Unary", () => {
