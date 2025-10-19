@@ -1,6 +1,6 @@
 {
   "name": "@zthun/helpful-query",
-  "version": "9.6.0",
+  "version": "9.7.0",
   "description": "Helpful library that implements the source pattern and provides in-memory data sources.",
   "author": "Anthony Bonta",
   "license": "MIT",

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.0](https://github.com/zthun/helpful/compare/v9.6.0...v9.7.0) (2025-10-19)
+
+
+### Features
+
+* filter binary now supports starts with and ends with ([ae6301e](https://github.com/zthun/helpful/commit/ae6301eed8eb078b7b78f18f17c774d4749db23b))
+
+
+
 ## [9.6.0](https://github.com/zthun/helpful/compare/v9.5.1...v9.6.0) (2025-10-14)
 
 
