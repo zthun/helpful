@@ -15,6 +15,7 @@ export * from "./geometry/rectangle.mjs";
 export * from "./global/global.mjs";
 export * from "./join-defined/join-defined.mjs";
 export * from "./lazy/lazy.mjs";
+export * from "./number/number-like.mjs";
 export * from "./obligation/obligation.mjs";
 export * from "./optional/optional.mjs";
 export * from "./orientation/orientation.mjs";
