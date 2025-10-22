@@ -4,8 +4,10 @@ const BYTES_PER_GIBIBYTE = BigInt("1073741824"); // 1024 ^ 3
 const BYTES_PER_TEBIBYTE = BigInt("1099511627776"); // 1024 ^ 4
 const BYTES_PER_PEBIBYTE = BigInt("1125899906842624"); // 1024 ^ 5
 
-function bytes(fractional: bigint, amount: number | bigint | string) {
-  return fractional * BigInt(amount);
+type BigNumber = number | bigint | string;
+
+function bytes(bytesPerUnit: bigint, amount: BigNumber) {
+  return bytesPerUnit * BigInt(amount);
 }
 
 /**
@@ -19,7 +21,10 @@ function bytes(fractional: bigint, amount: number | bigint | string) {
  * @returns
  *        The total number of bytes in the given amount of kibibytes.
  */
-export const kibibytes = bytes.bind(null, BYTES_PER_KIBIBYTE);
+export const kibibytes: (amount: BigNumber) => bigint = bytes.bind(
+  null,
+  BYTES_PER_KIBIBYTE,
+);
 /**
  * @see {@link kibibytes}
  */
@@ -36,7 +41,10 @@ export const kib = kibibytes;
  * @returns
  *        The total number of bytes in the given amount of mebibytes.
  */
-export const mebibytes = bytes.bind(null, BYTES_PER_MEBIBYTE);
+export const mebibytes: (amount: BigNumber) => bigint = bytes.bind(
+  null,
+  BYTES_PER_MEBIBYTE,
+);
 /**
  * @see {@link mebibytes}
  */
@@ -53,7 +61,10 @@ export const mib = mebibytes;
  * @returns
  *        The total number of bytes in the given amount of gibibytes.
  */
-export const gibibytes = bytes.bind(null, BYTES_PER_GIBIBYTE);
+export const gibibytes: (amount: BigNumber) => bigint = bytes.bind(
+  null,
+  BYTES_PER_GIBIBYTE,
+);
 /**
  * @see {@link gibibytes}
  */
@@ -70,7 +81,10 @@ export const gib = gibibytes;
  * @returns
  *        The total number of bytes in the given amount of tebibytes.
  */
-export const tebibytes = bytes.bind(null, BYTES_PER_TEBIBYTE);
+export const tebibytes: (amount: BigNumber) => bigint = bytes.bind(
+  null,
+  BYTES_PER_TEBIBYTE,
+);
 /**
  * @see {@link tebibytes}
  */
@@ -87,7 +101,10 @@ export const tib = tebibytes;
  * @returns
  *        The total number of bytes in the given amount of pebibytes.
  */
-export const pebibytes = bytes.bind(null, BYTES_PER_PEBIBYTE);
+export const pebibytes: (amount: BigNumber) => bigint = bytes.bind(
+  null,
+  BYTES_PER_PEBIBYTE,
+);
 /**
  * @see {@link pebibytes}
  */
