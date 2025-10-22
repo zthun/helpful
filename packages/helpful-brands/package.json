@@ -29,9 +29,9 @@
     "@zthun/helpful-reflection": "^9.6.0"
   },
   "devDependencies": {
-    "@zthun/janitor-build-config": "^19.3.6",
+    "@zthun/janitor-build-config": "^19.4.0",
     "lodash-es": "^4.17.21",
-    "vite": "^7.1.10",
+    "vite": "^7.1.11",
     "vitest": "^3.2.4"
   },
   "files": [
