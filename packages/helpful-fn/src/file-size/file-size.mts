@@ -1,13 +1,11 @@
-import type { ZNumberLike } from "../number/number-like.mjs";
+const BYTES_PER_KIBIBYTE = 1024;
+const BYTES_PER_MEBIBYTE = 1048576; // 1024 ^ 2
+const BYTES_PER_GIBIBYTE = 1073741824; // 1024 ^ 3
+const BYTES_PER_TEBIBYTE = 1099511627776; // 1024 ^ 4
+const BYTES_PER_PEBIBYTE = 1125899906842624; // 1024 ^ 5
 
-const BYTES_PER_KIBIBYTE = BigInt("1024");
-const BYTES_PER_MEBIBYTE = BigInt("1048576"); // 1024 ^ 2
-const BYTES_PER_GIBIBYTE = BigInt("1073741824"); // 1024 ^ 3
-const BYTES_PER_TEBIBYTE = BigInt("1099511627776"); // 1024 ^ 4
-const BYTES_PER_PEBIBYTE = BigInt("1125899906842624"); // 1024 ^ 5
-
-function bytes(bytesPerUnit: bigint, amount: ZNumberLike) {
-  return bytesPerUnit * BigInt(amount);
+function bytes(bytesPerUnit: number, amount: number) {
+  return Math.ceil(bytesPerUnit * amount);
 }
 
 /**
@@ -21,7 +19,7 @@ function bytes(bytesPerUnit: bigint, amount: ZNumberLike) {
  * @returns
  *        The total number of bytes in the given amount of kibibytes.
  */
-export const kibibytes: (amount: ZNumberLike) => bigint = bytes.bind(
+export const kibibytes: (amount: number) => number = bytes.bind(
   null,
   BYTES_PER_KIBIBYTE,
 );
@@ -41,7 +39,7 @@ export const kib = kibibytes;
  * @returns
  *        The total number of bytes in the given amount of mebibytes.
  */
-export const mebibytes: (amount: ZNumberLike) => bigint = bytes.bind(
+export const mebibytes: (amount: number) => number = bytes.bind(
   null,
   BYTES_PER_MEBIBYTE,
 );
@@ -61,7 +59,7 @@ export const mib = mebibytes;
  * @returns
  *        The total number of bytes in the given amount of gibibytes.
  */
-export const gibibytes: (amount: ZNumberLike) => bigint = bytes.bind(
+export const gibibytes: (amount: number) => number = bytes.bind(
   null,
   BYTES_PER_GIBIBYTE,
 );
@@ -81,7 +79,7 @@ export const gib = gibibytes;
  * @returns
  *        The total number of bytes in the given amount of tebibytes.
  */
-export const tebibytes: (amount: ZNumberLike) => bigint = bytes.bind(
+export const tebibytes: (amount: number) => number = bytes.bind(
   null,
   BYTES_PER_TEBIBYTE,
 );
@@ -101,7 +99,7 @@ export const tib = tebibytes;
  * @returns
  *        The total number of bytes in the given amount of pebibytes.
  */
-export const pebibytes: (amount: ZNumberLike) => bigint = bytes.bind(
+export const pebibytes: (amount: number) => number = bytes.bind(
   null,
   BYTES_PER_PEBIBYTE,
 );
