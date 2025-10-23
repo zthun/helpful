@@ -12,7 +12,7 @@
     "strictNullChecks": true,
     "strictBindCallApply": true,
     "skipLibCheck": true,
-    "target": "es5",
+    "target": "es2020",
     "jsx": "react-jsx",
     "module": "NodeNext"
   }
