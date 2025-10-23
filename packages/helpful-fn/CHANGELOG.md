@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.8.0](https://github.com/zthun/helpful/compare/v9.7.1...v9.8.0) (2025-10-23)
+
+
+### Features
+
+* added file size to byte helper functions ([3d386f7](https://github.com/zthun/helpful/commit/3d386f7b87ffb601cfda771e21a641c72de8add5))
+* number like describe types that can represent numbers ([3883e87](https://github.com/zthun/helpful/commit/3883e8747d52c1046bd9c5c3fad2d870b5849f37))
+
+
+
 ## [9.6.0](https://github.com/zthun/helpful/compare/v9.5.1...v9.6.0) (2025-10-14)
 
 **Note:** Version bump only for package @zthun/helpful-fn

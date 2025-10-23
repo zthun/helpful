@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.8.0](https://github.com/zthun/helpful/compare/v9.7.1...v9.8.0) (2025-10-23)
+
+**Note:** Version bump only for package @zthun/helpful-internet
+
+
+
+
+
 ## [9.6.0](https://github.com/zthun/helpful/compare/v9.5.1...v9.6.0) (2025-10-14)
 
 **Note:** Version bump only for package @zthun/helpful-internet
