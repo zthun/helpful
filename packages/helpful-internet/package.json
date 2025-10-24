@@ -1,6 +1,6 @@
 {
   "name": "@zthun/helpful-internet",
-  "version": "9.8.0",
+  "version": "9.9.0",
   "description": "Helpful objects that represents internet base entities",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@zthun/helpful-fn": "^9.8.0"
+    "@zthun/helpful-fn": "^9.9.0"
   },
   "devDependencies": {
     "@zthun/janitor-build-config": "^19.4.1",

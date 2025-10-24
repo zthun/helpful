@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.9.0](https://github.com/zthun/helpful/compare/v9.8.0...v9.9.0) (2025-10-24)
+
+
+### Features
+
+* mutable types remove the readonly flags for builder mutations ([bdbd1ba](https://github.com/zthun/helpful/commit/bdbd1ba58a7d0be82d824c311dd2c4de427157e9))
+
+
+
 ## [9.8.0](https://github.com/zthun/helpful/compare/v9.7.1...v9.8.0) (2025-10-23)
 
 
