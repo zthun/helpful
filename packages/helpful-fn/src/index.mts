@@ -1,5 +1,6 @@
 export * from "./anchor/anchor.mjs";
 export * from "./assert/assert.mjs";
+export * from "./cast/cast-extension.mjs";
 export * from "./count-buckets/count-buckets.mjs";
 export * from "./create-error/create-error.mjs";
 export * from "./create-guid/create-guid.mjs";
