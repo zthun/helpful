@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.10.0](https://github.com/zthun/helpful/compare/v9.9.0...v9.10.0) (2025-10-25)
+
+
+### Features
+
+* cast extension will take a string and make sure it's a proper extension format ([638a1a8](https://github.com/zthun/helpful/commit/638a1a8885791b024de749519149408e512502bc))
+
+
+
 ## [9.9.0](https://github.com/zthun/helpful/compare/v9.8.0...v9.9.0) (2025-10-24)
 
 
