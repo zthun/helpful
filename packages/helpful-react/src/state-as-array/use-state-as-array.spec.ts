@@ -1,4 +1,4 @@
-import type { IZCircusSetup } from "@zthun/cirque";
+import { ZCircusDestroy, type IZCircusSetup } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
@@ -21,10 +21,7 @@ describe("useStateAsArray", () => {
     initial = undefined;
   });
 
-  afterEach(async () => {
-    await _hook?.destroy?.call(_hook);
-    await _setup?.destroy?.call(_setup);
-  });
+  afterEach(() => ZCircusDestroy.sequential(_hook, _setup));
 
   describe("Initial", () => {
     it("should set the initial value", async () => {

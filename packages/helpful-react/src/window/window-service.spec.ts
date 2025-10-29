@@ -1,4 +1,4 @@
-import type { IZCircusSetup } from "@zthun/cirque";
+import { ZCircusDestroy, type IZCircusSetup } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { afterEach, describe, expect, it } from "vitest";
@@ -14,10 +14,7 @@ describe("useWindowService", () => {
     return _hook;
   }
 
-  afterEach(async () => {
-    await _hook?.destroy?.call(_hook);
-    await _setup?.destroy?.call(_setup);
-  });
+  afterEach(() => ZCircusDestroy.sequential(_hook, _setup));
 
   it("should return the global object by default", async () => {
     // Arrange.

@@ -1,4 +1,4 @@
-import type { IZCircusSetup } from "@zthun/cirque";
+import { ZCircusDestroy, type IZCircusSetup } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import type { Dispatch, SetStateAction } from "react";
@@ -23,10 +23,7 @@ describe("useSyncState", () => {
     _initial = "";
   });
 
-  afterEach(async () => {
-    await _hook?.destroy?.call(_hook);
-    await _factory?.destroy?.call(_factory);
-  });
+  afterEach(() => ZCircusDestroy.sequential(_hook, _factory));
 
   it("should update the internal state when the initial value changes", async () => {
     // Arrange.

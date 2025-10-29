@@ -1,5 +1,5 @@
 import type { IZCircusSetup } from "@zthun/cirque";
-import { ZCircusKeyboardQwerty } from "@zthun/cirque";
+import { ZCircusDestroy, ZCircusKeyboardQwerty } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import type { KeyboardEvent } from "react";
@@ -24,10 +24,7 @@ describe("useKeyboardActivate", () => {
     codes = undefined;
   });
 
-  afterEach(async () => {
-    await _hook?.destroy?.call(_hook);
-    await _setup?.destroy?.call(_setup);
-  });
+  afterEach(() => ZCircusDestroy.sequential(_hook, _setup));
 
   describe("With", () => {
     beforeEach(() => {
