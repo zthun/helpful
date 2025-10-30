@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.11.0](https://github.com/zthun/helpful/compare/v9.10.1...v9.11.0) (2025-10-30)
+
+
+### Features
+
+* pickEvents picks all properties that start with the text, on ([40e6b66](https://github.com/zthun/helpful/commit/40e6b6616d570b129e727915128ac88d349d1793))
+
+
+
 ## [9.10.1](https://github.com/zthun/helpful/compare/v9.10.0...v9.10.1) (2025-10-29)
 
 **Note:** Version bump only for package @zthun/helpful
