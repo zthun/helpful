@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
-import { pickDataAttributes, pickDefined } from "./pick.mjs";
+import { describe, expect, it, vi } from "vitest";
+import { pickDataAttributes, pickDefined, pickEvents } from "./pick.mjs";
 
 describe("Pick", () => {
   describe("Defined", () => {
@@ -32,6 +32,29 @@ describe("Pick", () => {
 
       // Act.
       const actual = pickDataAttributes(target);
+
+      // Assert.
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  describe("Events", () => {
+    it("should pick keys that start with on", () => {
+      // Arrange.
+      const noop = vi.fn();
+      const target = {
+        name: "name",
+        onUpload: noop,
+        onClick: noop,
+        age: 32,
+      };
+      const expected = {
+        onUpload: noop,
+        onClick: noop,
+      };
+
+      // Act.
+      const actual = pickEvents(target);
 
       // Assert.
       expect(actual).toEqual(expected);

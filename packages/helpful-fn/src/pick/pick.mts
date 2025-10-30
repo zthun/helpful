@@ -59,3 +59,16 @@ export function pickDefined<T = unknown>(target: object): PickResult<T> {
 export function pickDataAttributes<T = unknown>(target: object): PickResult<T> {
   return pickBy((k) => String(k).startsWith("data-"), target);
 }
+
+/**
+ * An alias to pickBy((k) =&gt; k.startsWith('on')).
+ *
+ * @param target -
+ *        The target object to reduce.
+ *
+ * @returns
+ *        The reduced object.
+ */
+export function pickEvents<T = unknown>(target: object): PickResult<T> {
+  return pickBy((k) => String(k).startsWith("on"), target);
+}
