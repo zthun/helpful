@@ -1,6 +1,6 @@
 {
   "name": "@zthun/helpful-validation",
-  "version": "9.10.1",
+  "version": "9.11.1",
   "description": "Helpful extensions to class-validator for decorators that do not exist.",
   "author": "Anthony Bonta",
   "license": "MIT",
