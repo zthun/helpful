@@ -25,13 +25,13 @@
     "access": "public"
   },
   "dependencies": {
-    "class-validator": "~0.14.2",
+    "class-validator": "~0.14.3",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "@zthun/janitor-build-config": "^19.4.2",
-    "vite": "^7.1.12",
-    "vitest": "^4.0.5"
+    "@zthun/janitor-build-config": "^19.5.3",
+    "vite": "^7.2.7",
+    "vitest": "^4.0.15"
   },
   "files": [
     "dist"
