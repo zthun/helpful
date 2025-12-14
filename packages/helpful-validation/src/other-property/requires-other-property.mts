@@ -10,9 +10,7 @@ import { get } from "lodash-es";
  * Represents a constraint that requires another property to be set as well.
  */
 @ValidatorConstraint({ name: "requires-other-property", async: false })
-export class RequiresOtherPropertyValidator
-  implements ValidatorConstraintInterface
-{
+export class RequiresOtherPropertyValidator implements ValidatorConstraintInterface {
   /**
    * Validates that another property is set in addition to the current value.
    *

@@ -18,8 +18,7 @@ export enum ZOperatorCollection {
 /**
  * A filter that operates on a collection of values.
  */
-export interface IZFilterCollection
-  extends IZFilterSubject<ZOperatorCollection> {
+export interface IZFilterCollection extends IZFilterSubject<ZOperatorCollection> {
   /**
    * The values to compare the field against.
    */

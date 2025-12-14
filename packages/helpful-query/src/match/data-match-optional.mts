@@ -8,9 +8,10 @@ import type { IZDataMatch } from "./data-match.mjs";
  * @param TFilter -
  *        The type of filter performing the match.
  */
-export class ZDataMatchOptional<TData, TFilter>
-  implements IZDataMatch<TData, TFilter | undefined | null>
-{
+export class ZDataMatchOptional<TData, TFilter> implements IZDataMatch<
+  TData,
+  TFilter | undefined | null
+> {
   /**
    * Initializes a new instance of this object.
    *

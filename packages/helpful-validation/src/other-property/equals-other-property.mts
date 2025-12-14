@@ -10,9 +10,7 @@ import { get } from "lodash-es";
  * Represents a constraint that forces a property on an object to equal another property on the same object.
  */
 @ValidatorConstraint({ name: "equals-other-property", async: false })
-export class EqualsOtherPropertyValidator
-  implements ValidatorConstraintInterface
-{
+export class EqualsOtherPropertyValidator implements ValidatorConstraintInterface {
   /**
    * Validates that value equals another property defined by args.constraints.
    *

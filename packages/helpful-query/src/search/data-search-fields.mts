@@ -4,9 +4,10 @@ import type { IZDataMatch } from "../match/data-match.mjs";
 /**
  * Represents a data match where the data qualifies if any fields contain the search text.
  */
-export class ZDataSearchFields<TData extends object>
-  implements IZDataMatch<TData, string>
-{
+export class ZDataSearchFields<TData extends object> implements IZDataMatch<
+  TData,
+  string
+> {
   /**
    * Initializes a new instance of this object.
    *
