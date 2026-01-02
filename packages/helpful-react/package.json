@@ -27,18 +27,18 @@
   "dependencies": {
     "@zthun/helpful-fn": "^9.11.1",
     "@zthun/helpful-query": "^9.11.1",
-    "lodash-es": "^4.17.21",
+    "lodash-es": "^4.17.22",
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
     "@zthun/cirque": "^7.2.2",
     "@zthun/cirque-du-react": "^7.2.2",
-    "@zthun/janitor-build-config": "^19.5.3",
+    "@zthun/janitor-build-config": "^19.5.4",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "typescript": "~5.9.3",
-    "vite": "^7.2.7",
-    "vitest": "^4.0.15",
+    "vite": "^7.3.0",
+    "vitest": "^4.0.16",
     "vitest-mock-extended": "^3.1.0"
   },
   "peerDependencies": {
