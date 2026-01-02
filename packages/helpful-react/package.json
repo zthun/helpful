@@ -31,8 +31,8 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@zthun/cirque": "^7.2.2",
-    "@zthun/cirque-du-react": "^7.2.2",
+    "@zthun/cirque": "^7.2.4",
+    "@zthun/cirque-du-react": "^7.2.4",
     "@zthun/janitor-build-config": "^19.5.4",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
