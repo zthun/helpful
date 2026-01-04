@@ -3705,11 +3705,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zthun/helpful-brands@npm:^9.11.2, @zthun/helpful-brands@workspace:packages/helpful-brands":
+"@zthun/helpful-brands@npm:^9.11.3, @zthun/helpful-brands@workspace:packages/helpful-brands":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-brands@workspace:packages/helpful-brands"
   dependencies:
-    "@zthun/helpful-query": "npm:^9.11.2"
+    "@zthun/helpful-query": "npm:^9.11.3"
     "@zthun/helpful-reflection": "npm:^9.11.2"
     "@zthun/janitor-build-config": "npm:^19.5.4"
     "@zthun/janitor-ts-config": "npm:^19.5.3"
@@ -3734,7 +3734,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/helpful-internet@npm:^9.11.2, @zthun/helpful-internet@workspace:packages/helpful-internet":
+"@zthun/helpful-internet@npm:^9.11.3, @zthun/helpful-internet@workspace:packages/helpful-internet":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-internet@workspace:packages/helpful-internet"
   dependencies:
@@ -3747,7 +3747,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/helpful-query@npm:^9.11.2, @zthun/helpful-query@workspace:packages/helpful-query":
+"@zthun/helpful-query@npm:^9.11.3, @zthun/helpful-query@workspace:packages/helpful-query":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-query@workspace:packages/helpful-query"
   dependencies:
@@ -3761,14 +3761,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/helpful-react@npm:^9.11.2, @zthun/helpful-react@workspace:packages/helpful-react":
+"@zthun/helpful-react@npm:^9.11.3, @zthun/helpful-react@workspace:packages/helpful-react":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-react@workspace:packages/helpful-react"
   dependencies:
     "@zthun/cirque": "npm:^7.2.4"
     "@zthun/cirque-du-react": "npm:^7.2.4"
     "@zthun/helpful-fn": "npm:^9.11.2"
-    "@zthun/helpful-query": "npm:^9.11.2"
+    "@zthun/helpful-query": "npm:^9.11.3"
     "@zthun/janitor-build-config": "npm:^19.5.4"
     "@zthun/janitor-ts-config": "npm:^19.5.3"
     lodash-es: "npm:^4.17.22"
@@ -3803,7 +3803,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/helpful-validation@npm:^9.11.2, @zthun/helpful-validation@workspace:packages/helpful-validation":
+"@zthun/helpful-validation@npm:^9.11.3, @zthun/helpful-validation@workspace:packages/helpful-validation":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-validation@workspace:packages/helpful-validation"
   dependencies:
@@ -3821,12 +3821,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-web@workspace:packages/helpful-web"
   dependencies:
-    "@zthun/helpful-brands": "npm:^9.11.2"
+    "@zthun/helpful-brands": "npm:^9.11.3"
     "@zthun/helpful-fn": "npm:^9.11.2"
-    "@zthun/helpful-internet": "npm:^9.11.2"
-    "@zthun/helpful-query": "npm:^9.11.2"
-    "@zthun/helpful-react": "npm:^9.11.2"
-    "@zthun/helpful-validation": "npm:^9.11.2"
+    "@zthun/helpful-internet": "npm:^9.11.3"
+    "@zthun/helpful-query": "npm:^9.11.3"
+    "@zthun/helpful-react": "npm:^9.11.3"
+    "@zthun/helpful-validation": "npm:^9.11.3"
     "@zthun/janitor-build-config": "npm:^19.5.4"
     typedoc: "npm:^0.28.15"
     typescript: "npm:~5.9.3"
