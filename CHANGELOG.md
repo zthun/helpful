@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.4 (2026-01-31)</small>
+
+* build: update outdated packages ([a29a3bf](https://github.com/zthun/helpful/commit/a29a3bf))
+* chore: update yarn lockfile [skip ci] ([5709b40](https://github.com/zthun/helpful/commit/5709b40))
+
+
+
+
+
 ## [9.11.3](https://github.com/zthun/helpful/compare/v9.11.2...v9.11.3) (2026-01-04)
 
 **Note:** Version bump only for package @zthun/helpful
