@@ -23,8 +23,8 @@
     "@zthun/helpful-query": "^9.11.3",
     "@zthun/helpful-react": "^9.11.3",
     "@zthun/helpful-validation": "^9.11.3",
-    "@zthun/janitor-build-config": "^19.5.4",
-    "typedoc": "^0.28.15",
+    "@zthun/janitor-build-config": "^19.5.6",
+    "typedoc": "^0.28.16",
     "typescript": "~5.9.3"
   },
   "files": [
