@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.5 (2026-02-01)</small>
+
+* feat: try json parse allows you to attempt to parse json and return a fallback ([689505e](https://github.com/zthun/helpful/commit/689505e))
+* refactor: move to more generic try directory ([1ffe3e7](https://github.com/zthun/helpful/commit/1ffe3e7))
+* chore: update yarn lockfile [skip ci] ([5a89e25](https://github.com/zthun/helpful/commit/5a89e25))
+
+
+
+
+
 ## <small>9.11.4 (2026-01-31)</small>
 
 * build: update outdated packages ([a29a3bf](https://github.com/zthun/helpful/commit/a29a3bf))

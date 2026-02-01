@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.5 (2026-02-01)</small>
+
+**Note:** Version bump only for package @zthun/helpful-reflection
+
+
+
+
+
 ## <small>9.11.4 (2026-01-31)</small>
 
 * build: update outdated packages ([a29a3bf](https://github.com/zthun/helpful/commit/a29a3bf))
