@@ -35,4 +35,5 @@ export * from "./serialize/serialize.mjs";
 export * from "./set-first/set-first.mjs";
 export * from "./sleep/sleep.mjs";
 export * from "./tag/tag.mjs";
-export * from "./try-fallback/try-fallback.mjs";
+export * from "./try/try-fallback.mjs";
+export * from "./try/try-json-parse.mjs";
