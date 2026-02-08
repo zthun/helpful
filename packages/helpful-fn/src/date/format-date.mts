@@ -78,7 +78,7 @@ export function formatDateTime(
     date = new Date(value);
   }
 
-  if (date == null) {
+  if (date == null || Number.isNaN(date.getTime())) {
     return fallback;
   }
 

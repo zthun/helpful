@@ -52,4 +52,15 @@ describe("Format", () => {
     // Assert.
     expect(actual).toEqual(expected);
   });
+
+  it("should format to the fallback when the date is invalid", () => {
+    // Arrange.
+    const expected = "Invalid Date";
+
+    // Act.
+    const actual = formatDateTime(NaN, { fallback: expected });
+
+    // Assert
+    expect(actual).toEqual(expected);
+  });
 });
