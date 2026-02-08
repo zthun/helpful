@@ -1,8 +1,8 @@
-// @vitest-environment happy-dom
+// @vitest-environment node
 import { describe, expect, it } from "vitest";
 import { culture } from "./culture.mjs";
 
-describe("Culture (DOM)", () => {
+describe("Culture", () => {
   it("should return the current node locale", () => {
     // Arrange.
     // Act.
