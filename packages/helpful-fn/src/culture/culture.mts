@@ -1,3 +1,5 @@
+import { LocaleLookup } from "./locale-lookup.mjs";
+
 /**
  * Returns the users current culture (locale).
  *
@@ -16,5 +18,5 @@ export function culture() {
  *        A list of currently supported culture codes.
  */
 export function cultures() {
-  return ["en-us"];
+  return Object.keys(LocaleLookup);
 }
