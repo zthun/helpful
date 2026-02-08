@@ -1,13 +1,12 @@
-// @vitest-environment node
 import { describe, expect, it } from "vitest";
-import { culture } from "./culture.mjs";
+import { culture, cultures } from "./culture.mjs";
 
 describe("Culture", () => {
   it("should return the current node locale", () => {
-    // Arrange.
-    // Act.
-    const actual = culture();
-    // Assert.
-    expect(actual).toBeTruthy();
+    expect(culture()).toBeTruthy();
+  });
+
+  it("should return all supported cultures", () => {
+    expect(cultures().length).toBeGreaterThan(0);
   });
 });
