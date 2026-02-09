@@ -25,6 +25,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@date-fns/tz": "^1.4.1",
+    "date-fns": "^4.1.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
