@@ -1,6 +1,6 @@
 import { TZDate } from "@date-fns/tz";
 import { describe, expect, it } from "vitest";
-import { CalendarMonth } from "./calendar-month.mjs";
+import { ZCalendarMonth } from "./calendar-month.mjs";
 import { ZDateFormats } from "./format-date.mjs";
 import { parseDateTime } from "./parse-date.mjs";
 
@@ -67,7 +67,7 @@ describe("Parse", () => {
   });
 
   it("should parse to the users timezone at midnight for a date only format", () => {
-    const expected = new Date(2023, CalendarMonth.October, 14, 0, 0, 0, 0);
+    const expected = new Date(2023, ZCalendarMonth.October, 14, 0, 0, 0, 0);
     expect(
       parseDateTime("2023-10-14", {
         format: ZDateFormats.IsoDateOnly,
@@ -76,7 +76,7 @@ describe("Parse", () => {
   });
 
   it("should parse to the users timezone if no timezone is specified in the format and timezone is not set", () => {
-    const expected = new Date(2023, CalendarMonth.October, 14, 4, 52, 30, 224);
+    const expected = new Date(2023, ZCalendarMonth.October, 14, 4, 52, 30, 224);
     const format = ZDateFormats.IsoNoTimeZone;
     expect(
       parseDateTime("2023-10-14T04:52:30.224", { format })?.getTime(),
@@ -89,7 +89,7 @@ describe("Parse", () => {
     const format = ZDateFormats.IsoNoTimeZone;
     const expected = new TZDate(
       2023,
-      CalendarMonth.September,
+      ZCalendarMonth.September,
       14,
       4,
       52,
@@ -119,7 +119,7 @@ describe("Parse", () => {
   });
 
   it("should fill in the default date at midnight timezone time", () => {
-    const expected = new Date(2023, CalendarMonth.December, 24);
+    const expected = new Date(2023, ZCalendarMonth.December, 24);
     const format = ZDateFormats.IsoDateOnly;
     const actual = parseDateTime("2023-12-24", { format });
 
