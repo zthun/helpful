@@ -1,5 +1,5 @@
 import { TZDate } from "@date-fns/tz";
-import { parse } from "date-fns";
+import { parse, startOfToday } from "date-fns";
 import { culture as culture$ } from "../culture/culture.mjs";
 import { LocaleLookup } from "../culture/locale-lookup.mjs";
 import type { ZDateTime, ZDateTimeOptions } from "../date/date-time.mjs";
@@ -51,7 +51,7 @@ export function parseDateTime(
   } = options;
 
   const locale = LocaleLookup[culture];
-  const reference = new TZDate().withTimeZone(timeZone);
+  const reference = new TZDate(startOfToday()).withTimeZone(timeZone);
   const result = parse(value, format, reference, { locale });
 
   return Number.isNaN(result.getTime()) ? fallback : result;

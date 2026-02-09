@@ -117,4 +117,12 @@ describe("Parse", () => {
     const fallback = new Date();
     expect(parseDateTime("lol-wut?", { fallback })).toBe(fallback);
   });
+
+  it("should fill in the default date at midnight timezone time", () => {
+    const expected = new Date(2023, CalendarMonth.December, 24);
+    const format = ZDateFormats.IsoDateOnly;
+    const actual = parseDateTime("2023-12-24", { format });
+
+    expect(actual?.getTime()).toEqual(expected.getTime());
+  });
 });
