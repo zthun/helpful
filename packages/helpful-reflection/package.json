@@ -1,6 +1,6 @@
 {
   "name": "@zthun/helpful-reflection",
-  "version": "9.11.5",
+  "version": "9.11.6",
   "description": "Helpful decorators built around reflect-metadata.",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@zthun/helpful-fn": "^9.11.5",
+    "@zthun/helpful-fn": "^9.11.6",
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {

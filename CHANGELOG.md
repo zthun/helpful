@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.6 (2026-02-09)</small>
+
+* test: just keep it simple ([a6fb05f](https://github.com/zthun/helpful/commit/a6fb05f))
+* test: simplify ([0834d16](https://github.com/zthun/helpful/commit/0834d16))
+* test: validate that date only formats keep the time midnight user time ([74d28ed](https://github.com/zthun/helpful/commit/74d28ed))
+* refactor: parse date should respect the timezone default ([21e50f5](https://github.com/zthun/helpful/commit/21e50f5))
+* refactor: support all english and japan ([011f07e](https://github.com/zthun/helpful/commit/011f07e))
+* feat: added support for date time operations from clocks ([907216c](https://github.com/zthun/helpful/commit/907216c))
+* feat: calendar month gives the index offsets for better date initialization ([4e59fe6](https://github.com/zthun/helpful/commit/4e59fe6))
+* feat: format date time formats a guessable date ([56ceefe](https://github.com/zthun/helpful/commit/56ceefe))
+* feat: guess date guesses a date object out of a list of supported formats ([df1801c](https://github.com/zthun/helpful/commit/df1801c))
+* feat: parse date parses a date value given a format specifier ([86bcc68](https://github.com/zthun/helpful/commit/86bcc68))
+* feat: timezone let's you retrieve the user time zone and all available time zones ([6e8e6c6](https://github.com/zthun/helpful/commit/6e8e6c6))
+* feat: you can now retrieve the users  culture and supported cultures (locale) ([133ed6f](https://github.com/zthun/helpful/commit/133ed6f))
+* chore: check for a valid date in the case NaN is passed ([cc605a1](https://github.com/zthun/helpful/commit/cc605a1))
+* chore: date-fns dependency ([8398a96](https://github.com/zthun/helpful/commit/8398a96))
+* chore: update yarn lockfile [skip ci] ([6495845](https://github.com/zthun/helpful/commit/6495845))
+* build: update outdated packages ([81a7acc](https://github.com/zthun/helpful/commit/81a7acc))
+
+
+
+
+
 ## <small>9.11.5 (2026-02-01)</small>
 
 * feat: try json parse allows you to attempt to parse json and return a fallback ([689505e](https://github.com/zthun/helpful/commit/689505e))
