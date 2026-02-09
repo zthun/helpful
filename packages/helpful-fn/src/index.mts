@@ -12,6 +12,7 @@ export * from "./date/parse-date.mjs";
 export * from "./date/timezone.mjs";
 export * from "./detokenize/detokenize.mjs";
 export * from "./empty/is-empty-object.mjs";
+export * from "./enum/is-enum.mjs";
 export * from "./file-size/file-size.mjs";
 export * from "./first-where/first-where.mjs";
 export * from "./function/supplier.mjs";
