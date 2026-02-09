@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.7 (2026-02-09)</small>
+
+* feat: cast enum tries to cast a value to an enum value set ([dc7e0ff](https://github.com/zthun/helpful/commit/dc7e0ff))
+* feat: cast number tries to cast a candidate to a number and falls back if it is not possible ([c904270](https://github.com/zthun/helpful/commit/c904270))
+* feat: is enum determines if a candidate value can represent an object value enumeration ([6b97947](https://github.com/zthun/helpful/commit/6b97947))
+* test: we have enums already ([ead6e98](https://github.com/zthun/helpful/commit/ead6e98))
+* fix: enum, CalendarMonth is now properly named ZCalendarMonth ([89ffeee](https://github.com/zthun/helpful/commit/89ffeee))
+* refactor: declare calendar month as enum ([e9cd700](https://github.com/zthun/helpful/commit/e9cd700))
+* chore: update yarn lockfile [skip ci] ([b025f95](https://github.com/zthun/helpful/commit/b025f95))
+
+
+
+
+
 ## <small>9.11.6 (2026-02-09)</small>
 
 * test: just keep it simple ([a6fb05f](https://github.com/zthun/helpful/commit/a6fb05f))
