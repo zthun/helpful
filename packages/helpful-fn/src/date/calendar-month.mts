@@ -5,7 +5,7 @@
  * since it's easy to be off by 1 when specifying
  * a month index.
  */
-export enum CalendarMonth {
+export enum ZCalendarMonth {
   January = 0,
   February = 1,
   March = 2,
