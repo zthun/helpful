@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.9 (2026-02-10)</small>
+
+* fix: enums can only be strings or numbers ([201e808](https://github.com/zthun/helpful/commit/201e808))
+* chore: update yarn lockfile [skip ci] ([404a4a9](https://github.com/zthun/helpful/commit/404a4a9))
+
+
+
+
+
 ## <small>9.11.8 (2026-02-10)</small>
 
 * feat: enum info describes generic information about an enum value ([3e3413f](https://github.com/zthun/helpful/commit/3e3413f))
