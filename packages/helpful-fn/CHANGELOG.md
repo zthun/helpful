@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.10 (2026-02-10)</small>
+
+* fix: interface, IZEnumInformation is now IZEnumInfo to match the builder name ([2b8b23b](https://github.com/zthun/helpful/commit/2b8b23b))
+
+
+
+
+
 ## <small>9.11.9 (2026-02-10)</small>
 
 * fix: enums can only be strings or numbers ([201e808](https://github.com/zthun/helpful/commit/201e808))
