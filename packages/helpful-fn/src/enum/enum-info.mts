@@ -12,7 +12,7 @@
  * but it's much more specific and specialized
  * to enumerations.
  */
-export interface IZEnumInformation<TEnum extends string | number> {
+export interface IZEnumInfo<TEnum extends string | number> {
   /**
    * The display name of the enum value.
    */
@@ -41,7 +41,7 @@ export interface IZEnumInformation<TEnum extends string | number> {
  * Builds information for an enum.
  */
 export class ZEnumInfoBuilder<TEnum extends string | number> {
-  private _metadata: IZEnumInformation<TEnum>;
+  private _metadata: IZEnumInfo<TEnum>;
 
   /**
    * Initializes a new instance of this object.
@@ -103,7 +103,7 @@ export class ZEnumInfoBuilder<TEnum extends string | number> {
    * @returns
    *        A shallow copy of the metadata.
    */
-  public build(): IZEnumInformation<TEnum> {
+  public build(): IZEnumInfo<TEnum> {
     return { ...this._metadata };
   }
 }
