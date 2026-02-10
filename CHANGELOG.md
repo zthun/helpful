@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>9.11.8 (2026-02-10)</small>
+
+* feat: enum info describes generic information about an enum value ([3e3413f](https://github.com/zthun/helpful/commit/3e3413f))
+* chore: update yarn lockfile [skip ci] ([388e955](https://github.com/zthun/helpful/commit/388e955))
+
+
+
+
+
 ## <small>9.11.7 (2026-02-09)</small>
 
 * feat: cast enum tries to cast a value to an enum value set ([dc7e0ff](https://github.com/zthun/helpful/commit/dc7e0ff))
