@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { detokenize } from "./detokenize.mjs";
 
 describe("Detokenize", () => {

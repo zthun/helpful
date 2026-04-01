@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { ZBrandKnown } from "./brand-known.mjs";
 
 describe("ZBrand", () => {

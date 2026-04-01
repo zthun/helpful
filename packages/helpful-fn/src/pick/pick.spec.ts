@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
+
 import { pickDataAttributes, pickDefined, pickEvents } from "./pick.mjs";
 
 describe("Pick", () => {

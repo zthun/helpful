@@ -1,19 +1,20 @@
-import { ZCircusDestroy, type IZCircusSetup } from "@zthun/cirque";
+import { type IZCircusSetup, ZCircusDestroy } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { sleep } from "@zthun/helpful-fn";
 import { get, noop } from "lodash-es";
 import type { Mock } from "vitest";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+
 import type { ZAsyncDataTuple } from "./use-async-state.mjs";
 import {
-  ZAsyncLoading,
   asStateData,
   asStateError,
   isStateErrored,
   isStateLoaded,
   isStateLoading,
   useAsyncState,
+  ZAsyncLoading,
 } from "./use-async-state.mjs";
 
 describe("useAsyncState", () => {

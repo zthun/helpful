@@ -1,6 +1,7 @@
 import type { ValidationArguments } from "class-validator";
 import { registerDecorator } from "class-validator";
 import { beforeEach, describe, expect, it, vi } from "vitest";
+
 import {
   IsDataURILimit,
   IsDataURILimitValidator,

@@ -1,4 +1,4 @@
-import { ZCircusDestroy, type IZCircusSetup } from "@zthun/cirque";
+import { type IZCircusSetup, ZCircusDestroy } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { sleep } from "@zthun/helpful-fn";
@@ -10,6 +10,7 @@ import {
 } from "@zthun/helpful-query";
 import { range } from "lodash-es";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
+
 import { isStateLoading } from "../async-state/use-async-state.mjs";
 import { usePageViewState } from "./use-page-view-state.mjs";
 

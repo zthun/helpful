@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { ZLazy } from "./lazy.mjs";
 
 describe("ZLazy", () => {

@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+
+import type { IZFilter } from "./filter.mjs";
 import { ZFilterBinaryBuilder, ZOperatorBinary } from "./filter-binary.mjs";
 import {
   ZFilterCollectionBuilder,
@@ -7,7 +9,6 @@ import {
 import { ZFilterLogicBuilder, ZOperatorLogic } from "./filter-logic.mjs";
 import { ZFilterSerialize } from "./filter-serialize.mjs";
 import { ZFilterUnaryBuilder, ZOperatorUnary } from "./filter-unary.mjs";
-import type { IZFilter } from "./filter.mjs";
 
 describe("ZFilterSerialize", () => {
   const createTestTarget = () => new ZFilterSerialize();

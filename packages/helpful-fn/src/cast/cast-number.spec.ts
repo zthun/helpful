@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { castNumber } from "./cast-number.mjs";
 
 describe("CastNumber", () => {

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { tryJsonParse } from "./try-json-parse.mjs";
 
 describe("tryJsonParse", () => {

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { ZFilterBinaryBuilder, ZOperatorBinary } from "./filter-binary.mjs";
 
 describe("Binary Filter", () => {

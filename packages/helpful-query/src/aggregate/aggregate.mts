@@ -74,6 +74,6 @@ export class ZAggregateBuilder<T = any> {
    */
   public build(): IZAggregate<T> {
     // Given how to construct this builder, we know how
-    return structuredClone(this._aggregate) as IZAggregate<T>;
+    return structuredClone(this._aggregate);
   }
 }

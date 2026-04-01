@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { isTagged, ZTag } from "./tag.js";
 
 @ZTag("yellow")

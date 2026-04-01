@@ -60,7 +60,7 @@ export class ZAssert {
    * @param fail -
    *        The factory that is responsible for returning the specified error to throw.
    */
-  public assert<E extends Error>(fail: (message: any | any[]) => E): void {
+  public assert<E extends Error>(fail: (message: any) => E): void {
     if (this._messages.length === 1) {
       throw fail(this._messages[0]);
     }

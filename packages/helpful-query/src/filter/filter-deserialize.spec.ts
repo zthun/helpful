@@ -1,27 +1,28 @@
 import { describe, expect, it } from "vitest";
+
 import type { IZFilterBinary } from "./filter-binary.mjs";
 import {
+  isBinaryFilter,
   ZFilterBinaryBuilder,
   ZOperatorBinary,
-  isBinaryFilter,
 } from "./filter-binary.mjs";
 import type { IZFilterCollection } from "./filter-collection.mjs";
 import {
-  ZOperatorCollection,
   isCollectionFilter,
+  ZOperatorCollection,
 } from "./filter-collection.mjs";
 import { ZFilterDeserialize } from "./filter-deserialize.mjs";
 import type { IZFilterLogic } from "./filter-logic.mjs";
 import {
+  isLogicFilter,
   ZFilterLogicBuilder,
   ZOperatorLogic,
-  isLogicFilter,
 } from "./filter-logic.mjs";
 import type { IZFilterMetadata, IZFilterSubject } from "./filter-subject.mjs";
 import {
+  isUnaryFilter,
   ZFilterUnaryBuilder,
   ZOperatorUnary,
-  isUnaryFilter,
 } from "./filter-unary.mjs";
 
 describe("ZFilterDeserialize", () => {

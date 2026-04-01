@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import type { JoinListInputParameter } from "./join-defined.mjs";
 import {
   commaJoinDefined,

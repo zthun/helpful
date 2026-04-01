@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { castExtension } from "./cast-extension.mjs";
 
 describe("Cast Extension", () => {

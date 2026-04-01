@@ -1,19 +1,20 @@
 import { range } from "lodash-es";
 import { beforeEach, describe, expect, it } from "vitest";
+
 import { ZDataFilterFields } from "../filter/data-filter-fields.mjs";
+import type { IZFilter } from "../filter/filter.mjs";
 import { ZFilterBinaryBuilder } from "../filter/filter-binary.mjs";
 import { ZFilterCollectionBuilder } from "../filter/filter-collection.mjs";
 import { ZFilterLogicBuilder } from "../filter/filter-logic.mjs";
 import { ZFilterUnaryBuilder } from "../filter/filter-unary.mjs";
-import type { IZFilter } from "../filter/filter.mjs";
 import { ZDataSearchFields } from "../search/data-search-fields.mjs";
 import { ZDataSearchText } from "../search/data-search-text.mjs";
 import { ZSortBuilder } from "../sort/sort.mjs";
 import type { IZDataRequest } from "./data-request.mjs";
 import { ZDataRequestBuilder } from "./data-request.mjs";
+import { ZDataSourceStatic } from "./data-source-static.mjs";
 import type { IZDataSourceStaticOptions } from "./data-source-static-options.mjs";
 import { ZDataSourceStaticOptionsBuilder } from "./data-source-static-options.mjs";
-import { ZDataSourceStatic } from "./data-source-static.mjs";
 
 describe("ZDataSourceStatic", () => {
   let arr: any[] | Promise<any[]>;

@@ -4,8 +4,9 @@ import {
   ZDataSourceStatic,
   ZDataSourceStaticOptionsBuilder,
 } from "@zthun/helpful-query";
-import { ZBrandKnown } from "./brand-known.mjs";
+
 import type { IZBrand } from "./brand.mjs";
+import { ZBrandKnown } from "./brand-known.mjs";
 
 export abstract class ZBrandDataSourceFactory {
   public static create(): IZDataSource<IZBrand> {

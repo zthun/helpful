@@ -1,8 +1,9 @@
-import { ZCircusDestroy, type IZCircusSetup } from "@zthun/cirque";
+import { type IZCircusSetup, ZCircusDestroy } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import type { Dispatch, SetStateAction } from "react";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
+
 import { useSyncState } from "./use-sync-state.mjs";
 
 type StateTuple<T> = [T, Dispatch<SetStateAction<T>>];

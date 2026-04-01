@@ -32,7 +32,7 @@ export class ZDeserializeTry<T, S = string> implements IZDeserialize<T, S> {
       }
     }
 
-    const msg = `Unable to deserialize candidate, ${candidate}.`;
+    const msg = `Unable to deserialize candidate, ${JSON.stringify(candidate)}.`;
     errors.splice(0, 0, msg);
     throw new Error(errors.join("\n\n"));
   }

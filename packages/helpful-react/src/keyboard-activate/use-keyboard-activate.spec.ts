@@ -5,6 +5,7 @@ import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import type { KeyboardEvent } from "react";
 import type { Mock } from "vitest";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+
 import { useKeyboardActivate } from "./use-keyboard-activate.mjs";
 
 describe("useKeyboardActivate", () => {

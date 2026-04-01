@@ -1,5 +1,6 @@
 import { registerDecorator } from "class-validator";
 import { describe, expect, it, vi } from "vitest";
+
 import {
   IsNotWhiteSpace,
   IsNotWhiteSpaceValidator,

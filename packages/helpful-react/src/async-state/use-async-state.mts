@@ -1,7 +1,7 @@
-import { createError } from "@zthun/helpful-fn";
+import { createError, sleep } from "@zthun/helpful-fn";
 import type { DependencyList } from "react";
 import { useEffect, useRef, useState } from "react";
-import { Subscription, defer, from } from "rxjs";
+import { defer, from, Subscription } from "rxjs";
 
 /**
  * The value that will be set on an ZAsyncDataState when the data is being loaded.
@@ -73,6 +73,7 @@ export function useAsyncState<T>(
       return;
     }
 
+    await sleep();
     return _refresh();
   };
 

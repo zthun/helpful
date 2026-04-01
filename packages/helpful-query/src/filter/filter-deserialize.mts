@@ -1,22 +1,23 @@
 import type { IZDeserialize } from "@zthun/helpful-fn";
 import { peel, peelBetween } from "@zthun/helpful-fn";
 import { trim, trimStart } from "lodash-es";
+
+import type { IZFilter, ZOperatorFilter } from "./filter.mjs";
+import { ZOperatorsFilter } from "./filter.mjs";
 import type { IZFilterBinary, ZOperatorBinary } from "./filter-binary.mjs";
-import { ZFilterBinaryBuilder, isBinaryOperator } from "./filter-binary.mjs";
+import { isBinaryOperator, ZFilterBinaryBuilder } from "./filter-binary.mjs";
 import type {
   IZFilterCollection,
   ZOperatorCollection,
 } from "./filter-collection.mjs";
 import {
-  ZFilterCollectionBuilder,
   isCollectionOperator,
+  ZFilterCollectionBuilder,
 } from "./filter-collection.mjs";
 import type { IZFilterLogic, ZOperatorLogic } from "./filter-logic.mjs";
-import { ZFilterLogicBuilder, isLogicOperator } from "./filter-logic.mjs";
+import { isLogicOperator, ZFilterLogicBuilder } from "./filter-logic.mjs";
 import type { IZFilterUnary, ZOperatorUnary } from "./filter-unary.mjs";
-import { ZFilterUnaryBuilder, isUnaryOperator } from "./filter-unary.mjs";
-import type { IZFilter, ZOperatorFilter } from "./filter.mjs";
-import { ZOperatorsFilter } from "./filter.mjs";
+import { isUnaryOperator, ZFilterUnaryBuilder } from "./filter-unary.mjs";
 
 /**
  * Represents a parser object that can parse an {@link IZFilter} from a string.
@@ -68,13 +69,13 @@ export class ZFilterDeserialize implements IZDeserialize<IZFilter> {
     const splitArgs = argList.split(",").filter((x) => !!x);
 
     if (splitArgs.length < minArgs) {
-      const msg = `Not enough arguments for ${operator} filter: ${splitArgs}.`;
+      const msg = `Not enough arguments for ${operator} filter: ${JSON.stringify(splitArgs)}.`;
       const expected = `Expected at least ${minArgs} arguments, but got ${splitArgs.length} instead.`;
       throw new Error(`${msg}.  ${expected}`);
     }
 
     if (splitArgs.length > maxArgs) {
-      const msg = `Too many arguments for ${operator} filter: ${splitArgs}.`;
+      const msg = `Too many arguments for ${operator} filter: ${JSON.stringify(splitArgs)}.`;
       const expected = `Expected at most ${maxArgs} arguments, but got ${splitArgs.length} instead.`;
       throw new Error(`${msg}.  ${expected}`);
     }

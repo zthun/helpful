@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { firstDefined, firstTruthy } from "./first-where.mjs";
 
 describe("FirstDefined", () => {

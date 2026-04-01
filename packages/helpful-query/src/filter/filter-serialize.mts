@@ -1,9 +1,10 @@
 import type { IZSerialize } from "@zthun/helpful-fn";
+
+import type { IZFilter } from "./filter.mjs";
 import { isBinaryFilter } from "./filter-binary.mjs";
 import { isCollectionFilter } from "./filter-collection.mjs";
 import { isLogicFilter } from "./filter-logic.mjs";
 import { isUnaryFilter } from "./filter-unary.mjs";
-import type { IZFilter } from "./filter.mjs";
 
 /**
  * Represents a serializer that can serialize a filter object to a string.

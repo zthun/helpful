@@ -1,12 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { ZFilterBinaryBuilder, isBinaryFilter } from "./filter-binary.mjs";
+
+import { isBinaryFilter, ZFilterBinaryBuilder } from "./filter-binary.mjs";
 import {
-  ZFilterCollectionBuilder,
   isCollectionFilter,
+  ZFilterCollectionBuilder,
 } from "./filter-collection.mjs";
-import { ZFilterLogicBuilder, isLogicFilter } from "./filter-logic.mjs";
+import { isLogicFilter, ZFilterLogicBuilder } from "./filter-logic.mjs";
 import type { IZFilterMetadata } from "./filter-subject.mjs";
-import { ZFilterUnaryBuilder, isUnaryFilter } from "./filter-unary.mjs";
+import { isUnaryFilter, ZFilterUnaryBuilder } from "./filter-unary.mjs";
 
 describe("Filter", () => {
   function assertIsFilter<T extends IZFilterMetadata, G>(

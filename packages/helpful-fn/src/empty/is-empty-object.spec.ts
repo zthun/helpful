@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { isEmptyObject } from "./is-empty-object.mjs";
 
 describe("isEmptyObject", () => {

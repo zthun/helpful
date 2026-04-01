@@ -1,8 +1,9 @@
 import type { Mocked } from "vitest";
 import { beforeEach, describe, expect, it } from "vitest";
 import { mock } from "vitest-mock-extended";
-import { ZDeserializeTry } from "./deserialize-try.mjs";
+
 import type { IZDeserialize } from "./deserialize.mjs";
+import { ZDeserializeTry } from "./deserialize-try.mjs";
 
 describe("ZDeserializeTry", () => {
   let alpha: Mocked<IZDeserialize<any>>;

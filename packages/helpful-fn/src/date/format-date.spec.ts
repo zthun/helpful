@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { ZDateFormats, formatDateTime } from "./format-date.mjs";
+
+import { formatDateTime, ZDateFormats } from "./format-date.mjs";
 
 describe("Format", () => {
   it("should format to the empty string if the value is undefined with no fallback", () => {

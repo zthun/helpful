@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { ZAggregateBuilder } from "./aggregate.mjs";
 
 describe("ZAggregate", () => {

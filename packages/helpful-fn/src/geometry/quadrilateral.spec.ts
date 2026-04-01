@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import type { IZQuadrilateral, ZQuadrilateralLike } from "./quadrilateral.mjs";
 import { ZQuadrilateralBuilder } from "./quadrilateral.mjs";
 

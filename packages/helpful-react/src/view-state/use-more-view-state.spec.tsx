@@ -1,4 +1,4 @@
-import { ZCircusDestroy, type IZCircusSetup } from "@zthun/cirque";
+import { type IZCircusSetup, ZCircusDestroy } from "@zthun/cirque";
 import type { IZCircusReactHook } from "@zthun/cirque-du-react";
 import { ZCircusSetupHook } from "@zthun/cirque-du-react";
 import { sleep } from "@zthun/helpful-fn";
@@ -12,6 +12,7 @@ import { range } from "lodash-es";
 import { StrictMode } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { mock } from "vitest-mock-extended";
+
 import {
   asStateError,
   isStateLoading,

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { createGuid } from "../create-guid/create-guid.mjs";
 import { tryFallback, tryFallbackAsync } from "./try-fallback.mjs";
 
@@ -25,7 +26,7 @@ describe("Try With Fallback", () => {
       expect(actual).toBeUndefined();
     });
 
-    it("should return fallback if an error is thrown", async () => {
+    it("should return fallback if an error is thrown", () => {
       // Arrange.
       const expected = createGuid();
       // Act.

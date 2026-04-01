@@ -39,7 +39,7 @@ export function tag(
   let [result] = strings;
 
   for (let i = 1, l = strings.length; i < l; i++) {
-    result += expressions[i - 1];
+    result += String(expressions[i - 1]);
     result += strings[i];
   }
 

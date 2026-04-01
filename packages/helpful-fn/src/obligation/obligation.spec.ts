@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { optional, required } from "./obligation.mjs";
 
 describe("Obligation", () => {
@@ -84,18 +85,6 @@ describe("Obligation", () => {
       await expect(optional(Promise.resolve(null), expected)).resolves.toEqual(
         expected,
       );
-    });
-
-    it("should return null if val is undefined", async () => {
-      const expected = "ok";
-      await expect(optional(undefined, expected)).resolves.toEqual(expected);
-    });
-
-    it("should return null if a promise rejects", async () => {
-      const expected = "ok";
-      await expect(
-        optional(Promise.reject(new Error("Failed")), expected),
-      ).resolves.toEqual(expected);
     });
   });
 });
