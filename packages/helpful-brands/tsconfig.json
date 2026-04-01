@@ -7,5 +7,5 @@
       "@zthun/helpful-reflection": ["../helpful-reflection/src/index.mts"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.mts"]
+  "include": ["**/*.ts", "**/*.mts"]
 }

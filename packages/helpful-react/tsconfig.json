@@ -11,5 +11,5 @@
       "@zthun/helpful-query": ["../helpful-query/src/index.mts"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.mts"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mts"]
 }
