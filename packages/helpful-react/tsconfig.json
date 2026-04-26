@@ -5,7 +5,6 @@
     "@zthun/janitor-ts-config/react"
   ],
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@zthun/helpful-fn": ["../helpful-fn/src/index.mts"],
       "@zthun/helpful-query": ["../helpful-query/src/index.mts"]

@@ -1,7 +1,6 @@
 {
   "extends": ["@zthun/janitor-ts-config/base", "@zthun/janitor-ts-config/node"],
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@zthun/helpful-query": ["../helpful-query/src/index.mts"],
       "@zthun/helpful-reflection": ["../helpful-reflection/src/index.mts"]
