@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.11.12](https://github.com/zthun/helpful/compare/v9.11.11...v9.11.12) (2026-04-26)
+
+**Note:** Version bump only for package @zthun/helpful-validation
+
 ## [9.11.11](https://github.com/zthun/helpful/compare/v9.11.10...v9.11.11) (2026-04-01)
 
 **Note:** Version bump only for package @zthun/helpful-validation
