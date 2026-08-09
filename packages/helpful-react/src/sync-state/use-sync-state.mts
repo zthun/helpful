@@ -1,5 +1,6 @@
+import { castSupplier } from "@zthun/helpful-fn";
 import type { Dispatch, SetStateAction } from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 /**
  * Represents a useState where changing the initial state resets the internal state.
@@ -10,6 +11,9 @@ import { useEffect, useState } from "react";
  *
  * @param initial -
  *        The initial state or a callback to retrieve the initial state.
+ *        Please note that this is evaluated on every render, so if you
+ *        are passing a supplier function, keep in mind that performance
+ *        may be impacted if is expensive to evaluate.
  *
  * @returns
  *        A set state tuple where the first value is the current set value,
@@ -18,11 +22,14 @@ import { useEffect, useState } from "react";
 export function useSyncState<S>(
   initial: S | (() => S),
 ): [S, Dispatch<SetStateAction<S>>] {
+  const _initial = castSupplier(initial)();
   const [value, setValue] = useState(initial);
+  const [prev, setPrev] = useState(initial);
 
-  useEffect(() => {
-    setValue(initial);
-  }, [initial]);
+  if (_initial !== prev) {
+    setPrev(_initial);
+    setValue(_initial);
+  }
 
   return [value, setValue];
 }
