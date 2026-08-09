@@ -19,7 +19,7 @@ export function useSyncState<S>(initial: S): [S, Dispatch<SetStateAction<S>>] {
   const [startedAs, setStartedAs] = useState(initial);
   const [currentValue, setCurrentValue] = useState(initial);
 
-  if (initial !== startedAs) {
+  if (!Object.is(initial, startedAs)) {
     setStartedAs(initial);
     setCurrentValue(initial);
   }
