@@ -3472,8 +3472,8 @@ __metadata:
     vitest: "npm:^4.1.10"
     vitest-mock-extended: "npm:^5.1.1"
   peerDependencies:
-    react: ">=18.0.0 <20.0.0"
-    react-dom: ">=18.0.0 <20.0.0"
+    react: ^19.2.8
+    react-dom: ^19.2.8
     rxjs: ^7.8.1
   peerDependenciesMeta:
     rxjs:
