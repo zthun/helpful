@@ -39,10 +39,7 @@ export function usePageViewState<T = any>(
   const page = request.page || 1;
 
   const _count = asStateData(count, 0);
-  const pages = useMemo(
-    () => countBuckets(size, _count, 1),
-    [request.size, count],
-  );
+  const pages = useMemo(() => countBuckets(size, _count, 1), [size, _count]);
 
   return { view, count, pages, size, page };
 }

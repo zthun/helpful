@@ -23,20 +23,20 @@ export type ZSetStateAsArray<T> = (
 export function useStateAsArray<T>(
   initial?: T | T[],
 ): [T[], ZSetStateAsArray<T>] {
-  const [value, _setValue] = useState<T[]>(
+  const [value, setValue] = useState<T[]>(() =>
     initial == null ? [] : castArray(initial),
   );
 
-  const setValue = (val: T | T[] | ZStateAsArrayReducer<T>) => {
+  const _setValue = (val: T | T[] | ZStateAsArrayReducer<T>) => {
     const valueIsReducer = (val: any): val is ZStateAsArrayReducer<T> =>
       typeof val === "function";
 
     if (valueIsReducer(val)) {
-      _setValue((v: T[]) => castArray(val(v)).slice());
+      setValue((v: T[]) => castArray(val(v)).slice());
     } else {
-      _setValue(castArray(val).slice());
+      setValue(castArray(val).slice());
     }
   };
 
-  return [value, setValue];
+  return [value, _setValue];
 }

@@ -8,7 +8,7 @@
  */
 
 import { $global } from "@zthun/helpful-fn";
-import { createContext, useContext } from "react";
+import { createContext, use } from "react";
 
 /**
  * A service that allows the user to open a file.
@@ -112,5 +112,5 @@ export const ZFileSelectContext = createContext<IZFileSelect>(
  *        The global file select object.
  */
 export function useFileSelect(): IZFileSelect {
-  return useContext(ZFileSelectContext);
+  return use(ZFileSelectContext);
 }

@@ -54,11 +54,11 @@ export function useAsyncState<T>(
   deps: DependencyList = [],
 ): ZAsyncDataTuple<T> {
   const [current, setCurrent] = useState<ZAsyncDataState<T>>(ZAsyncLoading);
-  const subscription = useRef<Subscription>(new Subscription());
+  const subscriptionRef = useRef<Subscription>(new Subscription());
 
   const _refresh = () => {
-    subscription.current.unsubscribe();
-    subscription.current = defer(() => {
+    subscriptionRef.current.unsubscribe();
+    subscriptionRef.current = defer(() => {
       setCurrent(ZAsyncLoading);
       return from(load());
     }).subscribe({
@@ -77,10 +77,14 @@ export function useAsyncState<T>(
     return _refresh();
   };
 
-  useEffect(() => {
-    _refresh();
-    return () => subscription.current.unsubscribe();
-  }, deps);
+  useEffect(
+    () => {
+      _refresh();
+      return () => subscriptionRef.current.unsubscribe();
+    },
+    // eslint-disable-next-line @eslint-react/exhaustive-deps
+    deps,
+  );
 
   return [current, refresh];
 }

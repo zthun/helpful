@@ -35,11 +35,7 @@ export interface IZQuadrilateral<T = number> {
  * of Point2d's which is not supported and has undefined behavior.
  */
 export type ZQuadrilateralLike<T = number> =
-  | T
-  | Partial<IZPoint2d<T>>
-  | Partial<IZQuadrilateral<T>>
-  | null
-  | undefined;
+  T | Partial<IZPoint2d<T>> | Partial<IZQuadrilateral<T>> | null | undefined;
 
 /**
  * Represents a builder for a quadrilateral object.

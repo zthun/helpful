@@ -5,10 +5,7 @@
  *        The type of value that is being checked.
  */
 export type ZObligatedValue<T> =
-  | T
-  | null
-  | undefined
-  | Promise<T | null | undefined>;
+  T | null | undefined | Promise<T | null | undefined>;
 
 /**
  * Requires a value to be non null.

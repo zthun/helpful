@@ -14,8 +14,7 @@ export type ZAmbassadorReducer<T> = (current: T | undefined) => T;
  * The type for setting the current value.
  */
 export type ZAmbassadorSetCurrent<T> =
-  | ((val: T | ZAmbassadorReducer<T>) => void)
-  | undefined;
+  ((val: T | ZAmbassadorReducer<T>) => void) | undefined;
 
 /**
  * A type of state where the value is used from the props in the case of them being set.
