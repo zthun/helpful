@@ -1,4 +1,3 @@
-import { castSupplier } from "@zthun/helpful-fn";
 import type { Dispatch, SetStateAction } from "react";
 import { useState } from "react";
 
@@ -10,26 +9,20 @@ import { useState } from "react";
  * updated state.
  *
  * @param initial -
- *        The initial state or a callback to retrieve the initial state.
- *        Please note that this is evaluated on every render, so if you
- *        are passing a supplier function, keep in mind that performance
- *        may be impacted if is expensive to evaluate.
+ *        The initial state.
  *
  * @returns
  *        A set state tuple where the first value is the current set value,
  *        and the 2nd value is a setter for the internal state.
  */
-export function useSyncState<S>(
-  initial: S | (() => S),
-): [S, Dispatch<SetStateAction<S>>] {
-  const _initial = castSupplier(initial)();
-  const [value, setValue] = useState(initial);
-  const [prev, setPrev] = useState(initial);
+export function useSyncState<S>(initial: S): [S, Dispatch<SetStateAction<S>>] {
+  const [startedAs, setStartedAs] = useState(initial);
+  const [currentValue, setCurrentValue] = useState(initial);
 
-  if (_initial !== prev) {
-    setPrev(_initial);
-    setValue(_initial);
+  if (initial !== startedAs) {
+    setStartedAs(initial);
+    setCurrentValue(initial);
   }
 
-  return [value, setValue];
+  return [currentValue, setCurrentValue];
 }
