@@ -23,9 +23,9 @@
     "@zthun/helpful-query": "^9.11.13",
     "@zthun/helpful-react": "^9.11.13",
     "@zthun/helpful-validation": "^9.11.13",
-    "@zthun/janitor-build-config": "^20.0.6",
-    "typedoc": "^0.28.19",
-    "typescript": "~6.0.3"
+    "@zthun/janitor-build-config": "^21.0.0",
+    "typedoc": "^0.28.20",
+    "typescript": "^6.0.3"
   },
   "files": [
     "dist"
