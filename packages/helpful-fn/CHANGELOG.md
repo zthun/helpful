@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/zthun/helpful/compare/v9.11.13...v10.0.0) (2026-08-09)
+
+### Features
+
+- added type SupplierMaybe ([4eccc5e](https://github.com/zthun/helpful/commit/4eccc5e25eb01b4b7a09b7bee49ce2c4ff11c25e))
+- castSupplier casts a value or function to a function ([fa40106](https://github.com/zthun/helpful/commit/fa40106442a884c0a9d9cbbfbcd3b90e8ac01c88))
+
 ## [9.11.13](https://github.com/zthun/helpful/compare/v9.11.12...v9.11.13) (2026-05-26)
 
 **Note:** Version bump only for package @zthun/helpful-fn

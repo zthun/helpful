@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/zthun/helpful/compare/v9.11.13...v10.0.0) (2026-08-09)
+
+**Note:** Version bump only for package @zthun/helpful-reflection
+
 ## [9.11.13](https://github.com/zthun/helpful/compare/v9.11.12...v9.11.13) (2026-05-26)
 
 **Note:** Version bump only for package @zthun/helpful-reflection

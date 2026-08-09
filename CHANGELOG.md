@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/zthun/helpful/compare/v9.11.13...v10.0.0) (2026-08-09)
+
+### Code Refactoring
+
+- signatures ([50d8f4b](https://github.com/zthun/helpful/commit/50d8f4bb85f12902f9cf8405302c25e982917950))
+
+### Features
+
+- added type SupplierMaybe ([4eccc5e](https://github.com/zthun/helpful/commit/4eccc5e25eb01b4b7a09b7bee49ce2c4ff11c25e))
+- castSupplier casts a value or function to a function ([fa40106](https://github.com/zthun/helpful/commit/fa40106442a884c0a9d9cbbfbcd3b90e8ac01c88))
+- minimum react version updated ([0e0d7cc](https://github.com/zthun/helpful/commit/0e0d7cc358c3cc6d47e9eb9e9f58d621a42f8ab6))
+- remove unused hook ([4a86943](https://github.com/zthun/helpful/commit/4a86943e961c9fdc8cff1a2f3eaa4f98dbfc39f3))
+
+### BREAKING CHANGES
+
+- The minimum react version required is now 19
+- useMoreViewState has been removed.
+
+  Do not use a more pattern. Infinite scroll sucks.
+
+- useSyncState no longer accepts a callback function
+
+  Evaluate your callbacks before passing values to this method
+
 ## [9.11.13](https://github.com/zthun/helpful/compare/v9.11.12...v9.11.13) (2026-05-26)
 
 **Note:** Version bump only for package @zthun/helpful
