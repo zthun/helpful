@@ -16,8 +16,8 @@ import { useState } from "react";
  *        and the 2nd value is a setter for the internal state.
  */
 export function useSyncState<S>(initial: S): [S, Dispatch<SetStateAction<S>>] {
-  const [startedAs, setStartedAs] = useState(initial);
-  const [currentValue, setCurrentValue] = useState(initial);
+  const [startedAs, setStartedAs] = useState(() => initial);
+  const [currentValue, setCurrentValue] = useState(() => initial);
 
   if (!Object.is(initial, startedAs)) {
     setStartedAs(initial);
