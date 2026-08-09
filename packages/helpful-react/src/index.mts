@@ -4,6 +4,5 @@ export * from "./file-select/file-select.mjs";
 export * from "./keyboard-activate/use-keyboard-activate.mjs";
 export * from "./state-as-array/use-state-as-array.mjs";
 export * from "./sync-state/use-sync-state.mjs";
-export * from "./view-state/use-more-view-state.mjs";
 export * from "./view-state/use-page-view-state.mjs";
 export * from "./window/window-service.mjs";
