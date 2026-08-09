@@ -14,19 +14,13 @@ import { ZOperatorsUnary } from "./filter-unary.mjs";
  * Represents one of the filter types.
  */
 export type IZFilter =
-  | IZFilterBinary
-  | IZFilterLogic
-  | IZFilterCollection
-  | IZFilterUnary;
+  IZFilterBinary | IZFilterLogic | IZFilterCollection | IZFilterUnary;
 
 /**
  * Represents one of the operator types.
  */
 export type ZOperatorFilter =
-  | ZOperatorBinary
-  | ZOperatorCollection
-  | ZOperatorLogic
-  | ZOperatorUnary;
+  ZOperatorBinary | ZOperatorCollection | ZOperatorLogic | ZOperatorUnary;
 
 /**
  * A list of all possible filter operators in one collection.

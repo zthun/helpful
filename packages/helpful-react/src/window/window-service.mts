@@ -1,5 +1,5 @@
 import { $global } from "@zthun/helpful-fn";
-import { createContext, useContext } from "react";
+import { createContext, use } from "react";
 
 /**
  * Represents the window context.
@@ -12,5 +12,5 @@ export const ZWindowServiceContext = createContext<typeof globalThis>($global);
  * @returns The current window object.
  */
 export function useWindowService() {
-  return useContext(ZWindowServiceContext);
+  return use(ZWindowServiceContext);
 }

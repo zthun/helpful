@@ -3,6 +3,7 @@ export * from "./assert/assert.mjs";
 export * from "./cast/cast-enum.mjs";
 export * from "./cast/cast-extension.mjs";
 export * from "./cast/cast-number.mjs";
+export * from "./cast/cast-supplier.mjs";
 export * from "./count-buckets/count-buckets.mjs";
 export * from "./create-error/create-error.mjs";
 export * from "./create-guid/create-guid.mjs";

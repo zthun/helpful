@@ -4,12 +4,14 @@
   "nx": true,
   "command": {
     "publish": {
-      "message": "chore(release): publish [skip ci]"
+      "message": "build(release): publish [skip ci]"
     }
   },
   "changelogPreset": {
-    "name": "conventionalcommits",
-    "issuePrefixes": ["#"],
+    "name": "angular",
+    "issuePrefixes": [
+      "#"
+    ],
     "types": [
       {
         "type": "feat",
@@ -71,5 +73,6 @@
     "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
     "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
     "userUrlFormat": "{{host}}/{{user}}"
-  }
+  },
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
