@@ -31,15 +31,16 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@zthun/cirque": "^7.2.9",
-    "@zthun/cirque-du-react": "^7.2.9",
-    "@zthun/janitor-build-config": "^21.0.0",
+    "@zthun/cirque": "^7.2.12",
+    "@zthun/cirque-du-react": "^7.2.12",
+    "@zthun/janitor-build-config": "^21.1.0",
     "@zthun/janitor-ts-config": "^21.0.0",
+    "@zthun/janitor-vite": "^21.1.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "typescript": "^6.0.3",
-    "vite": "^8.2.1",
-    "vitest": "^4.1.10",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11",
     "vitest-mock-extended": "^5.1.1"
   },
   "peerDependencies": {

@@ -28,11 +28,12 @@
     "@zthun/helpful-fn": "^10.0.0"
   },
   "devDependencies": {
-    "@zthun/janitor-build-config": "^21.0.0",
+    "@zthun/janitor-build-config": "^21.1.0",
     "@zthun/janitor-ts-config": "^21.0.0",
+    "@zthun/janitor-vite": "^21.1.0",
     "typescript": "^6.0.3",
-    "vite": "^8.2.1",
-    "vitest": "^4.1.10"
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
   },
   "files": [
     "dist"
