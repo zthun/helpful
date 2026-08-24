@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/zthun/helpful/compare/v10.0.0...v10.0.1) (2026-08-24)
+
+**Note:** Version bump only for package @zthun/helpful-react
+
 # [10.0.0](https://github.com/zthun/helpful/compare/v9.11.13...v10.0.0) (2026-08-09)
 
 ### Code Refactoring
