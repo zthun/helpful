@@ -1,22 +1,23 @@
 # Helpful Query
 
-Helpful query provides helper classes that solve the problem of trying to create
-components with reusable functionality such as filtering, sorting, searching and
-pagination.
+Helpful Query provides helper classes that solve the problem of trying to create
+components with reusable functionality such as filtering, sorting, searching,
+and pagination.
 
 ## The Source Pattern
 
-At the heart of this package is what we call, **the source pattern**. In most
-designs, we often tell components WHAT the data is. We query a rest endpoint, we
+At the heart of this package is what we call **the source pattern**. In most
+designs, we often tell components WHAT the data is. We query a REST endpoint, we
 receive a page of data, and we send that data to the component to display back
 to the end user.
 
 When done in this manner, specific features, such as filtering, sorting,
-searching, and pagination must be implemented over and over again, as the actual
-implementation of that set of data depends on the rest service being called.
-Many 3rd party libraries that attempt to support this out of box will support
-said features, but they are almost always client side restricted, meaning that
-you must pull down the entire data set instead of just a single page.
+searching, and pagination, must be implemented over and over again, as the
+actual implementation of that set of data depends on the REST service being
+called. Many third-party libraries that attempt to support this out of the box
+will support these features, but they are almost always restricted to the client
+side, meaning that you must pull down the entire data set instead of just a
+single page.
 
 The source pattern solves this problem by telling components HOW to get the data
 instead of WHAT the data is. This simple change in thinking allows us to
@@ -48,7 +49,23 @@ export interface IZDataSource<T> {
 }
 ```
 
-A component would take as input an object that implements an
-IZDataSource&lt;T&gt; contract, and will pass a request to it when it is ready
-to display the data. It will need to include it's own loading state, how to
-paginate, and what features it will give the user to sort, filter, and search.
+A component would take as input an object that implements the
+IZDataSource&lt;T&gt; contract and would pass a request to it when it is ready
+to display the data. It will need to manage its own loading state, implement
+pagination, and provide features for the user to sort, filter, and search.
+
+## Features
+
+Import the public exports in these guides from `@zthun/helpful-query`. Use
+`import type` for type-only exports.
+
+| Feature                                | Description                                                                                          |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [aggregate](./src/aggregate/README.md) | Represent named aggregate results such as counts, totals, or averages.                               |
+| [filter](./src/filter/README.md)       | Build, evaluate, serialize, and parse filters for object fields or whole values.                     |
+| [match](./src/match/README.md)         | Define matching strategies and adapt them to optional filters.                                       |
+| [metadata](./src/metadata/README.md)   | Describe fields for consumers that display, edit, or sort data.                                      |
+| [page](./src/page/README.md)           | Represent a page of items together with the total item count.                                        |
+| [search](./src/search/README.md)       | Match text using case-insensitive substring searches.                                                |
+| [sort](./src/sort/README.md)           | Build sort criteria, serialize them, and cycle a single-column sort.                                 |
+| [source](./src/source/README.md)       | Request, count, and retrieve data through the source pattern, including an in-memory implementation. |

@@ -1,7 +1,7 @@
 # Helpful Brands
 
 This package contains an object structure and a builder for different brands.
-The current list of supported brands are a subset of those found in
+The current list of supported brands is a subset of those found in
 [Font Awesome's Brand Family](https://fontawesome.com/search?o=r&m=free&f=brands).
 
 This package is mostly used for demos and testing of UI components.
@@ -31,7 +31,7 @@ const brand: IZBrand = new ZBrandBuilder()
   .owner("Meta Platforms")
   .build();
 
-// Some brands are automatically supported out of box.
+// Some brands are automatically supported out of the box.
 const facebook = new ZBrandBuilder().facebook().build();
 const x = new ZBrandBuilder().twitter().build();
 const instagram = new ZBrandBuilder().instagram().build();
@@ -43,9 +43,9 @@ just importing the ZBrands array.
 ```ts
 import { ZBrands } from "@zthun/helpful-brands";
 
-// Contains all brands that are supported out of the box by the ZBrandBuilder()
-// The actual array ZBrands, is frozen and immutable so you won't be able
-// to change anything in it.  If you need a mutable array, you must slice the
+// Contains all brands that are supported out of the box by ZBrandBuilder().
+// The ZBrands array is frozen and immutable, so you won't be able
+// to change anything in it. If you need a mutable array, you must slice the
 // ZBrands array.
 const brands = ZBrands.slice();
 ```
