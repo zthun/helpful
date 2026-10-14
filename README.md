@@ -15,6 +15,6 @@ hooks that get used across projects.
 | [@zthun/helpful-brands](./packages/helpful-brands/README.md)         | A library of decent static data for testing                                            |
 | [@zthun/helpful-fn](./packages/helpful-fn/README.md)                 | A collection of helpful functions and classes. This is stuff you don't find in lodash. |
 | [@zthun/helpful-query](./packages/helpful-query/README.md)           | Implements the source pattern.                                                         |
-| [@zthun/helpful-react](./packages/helpful-query/README.md)           | Useful react hooks, services, and context.                                             |
+| [@zthun/helpful-react](./packages/helpful-react/README.md)           | Useful react hooks, services, and context.                                             |
 | [@zthun/helpful-reflection](./packages/helpful-reflection/README.md) | Decorators for TypeScript classes.                                                     |
 | [@zthun/helpful-validation](./packages/helpful-validation/README.md) | Extensions to the class-validator library that adds some useful decorators.            |
