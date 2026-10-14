@@ -1,6 +1,6 @@
-import { createGuid } from "@zthun/helpful-fn";
 import { describe, expect, it } from "vitest";
 
+import { createGuid } from "../create-guid/create-guid.mjs";
 import { ZCookieBuilder } from "./cookie.mjs";
 
 describe("ZCookieBuilder", () => {
