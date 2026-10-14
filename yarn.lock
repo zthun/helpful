@@ -3411,19 +3411,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/helpful-internet@workspace:packages/helpful-internet":
-  version: 0.0.0-use.local
-  resolution: "@zthun/helpful-internet@workspace:packages/helpful-internet"
-  dependencies:
-    "@zthun/helpful-fn": "npm:^10.0.2"
-    "@zthun/janitor-ts-config": "npm:^21.1.3"
-    "@zthun/janitor-vite": "npm:^21.2.5"
-    typescript: "npm:^6.0.3"
-    vite: "npm:^8.3.4"
-    vitest: "npm:^5.0.4"
-  languageName: unknown
-  linkType: soft
-
 "@zthun/helpful-query@npm:^10.0.2, @zthun/helpful-query@workspace:packages/helpful-query":
   version: 0.0.0-use.local
   resolution: "@zthun/helpful-query@workspace:packages/helpful-query"
