@@ -1,6 +1,6 @@
-# Helpful Functions
+# Helpful Reflection
 
-Provides reflection decorators that halp describe metadata about a class,
+Provides reflection decorators that help describe metadata about a class,
 function, or field.
 
 ## Installation
