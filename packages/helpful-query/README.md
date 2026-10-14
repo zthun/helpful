@@ -53,3 +53,19 @@ A component would take as input an object that implements the
 IZDataSource&lt;T&gt; contract and would pass a request to it when it is ready
 to display the data. It will need to manage its own loading state, implement
 pagination, and provide features for the user to sort, filter, and search.
+
+## Features
+
+Import the public exports in these guides from `@zthun/helpful-query`. Use
+`import type` for type-only exports.
+
+| Feature                                | Description                                                                                          |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [aggregate](./src/aggregate/README.md) | Represent named aggregate results such as counts, totals, or averages.                               |
+| [filter](./src/filter/README.md)       | Build, evaluate, serialize, and parse filters for object fields or whole values.                     |
+| [match](./src/match/README.md)         | Define matching strategies and adapt them to optional filters.                                       |
+| [metadata](./src/metadata/README.md)   | Describe fields for consumers that display, edit, or sort data.                                      |
+| [page](./src/page/README.md)           | Represent a page of items together with the total item count.                                        |
+| [search](./src/search/README.md)       | Match text using case-insensitive substring searches.                                                |
+| [sort](./src/sort/README.md)           | Build sort criteria, serialize them, and cycle a single-column sort.                                 |
+| [source](./src/source/README.md)       | Request, count, and retrieve data through the source pattern, including an in-memory implementation. |
