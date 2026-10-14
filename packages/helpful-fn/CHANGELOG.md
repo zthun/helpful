@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/zthun/helpful/compare/v10.0.2...v11.0.0) (2026-10-14)
+
+### Features
+
+- helpful internet has been collapsed into helpful-fn ([0acf501](https://github.com/zthun/helpful/commit/0acf5013ec62fdf1864ee26a98daf2b8a5cc8c80))
+
+### BREAKING CHANGES
+
+- helpful-internet has been collapsed into helpful-fn
+
 ## [10.0.2](https://github.com/zthun/helpful/compare/v10.0.1...v10.0.2) (2026-10-01)
 
 **Note:** Version bump only for package @zthun/helpful-fn
